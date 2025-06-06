@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<style>
+  body{
+    background-color: rgb(211, 234, 253);
+    padding-top: 20px;
+   
+}
+html,body{
+    margin: 0%;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 720px;
+}
+.nav{
+    margin-left: -650px;
+}
+.nav ul li a{
+    color: #2b0c43;
+    margin-right: 35px;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    color: rgb(219, 15, 141);
+    text-decoration: none;
+}
+
+.nav ul li{
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.nav ul li a i{
+    margin-right: 5px;
+}
+.nav ul img{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: -30px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown a{
+    text-decoration: none;
+    color: #060f31;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(211, 234, 253);
+    min-width: 100px;
+    box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 5px;
+    top: 50px;
+    padding-top: 15px;
+    border: #060f31;
+    border-width: 1px;
+    border-style: solid;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown .dropdown-content a:hover{
+    color: #f800c2e1;
+    cursor: pointer;
+  }
+  
+img{
+    display: block;
+    margin: 0 auto;
+}
+.Ckm .a{
+    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/f2/b7/a6/nice-templebeautiful.jpg?w=1400&h=-1&s=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 300px;
+    height: 100px;
+}
+
+.Ckm .c{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color:#2b0c43;
+    background-color: rgb(211, 234, 253); 
+    margin: 0px;
+    text-align: justify;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Ckm .c .c2{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.Ckm .c .c1{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.Ckm .c .c3{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.imgc{
+    margin-top: 20px;
+}
+.Ckm .c1, .Ckm .c2, .Ckm .c3{
+    border: 3px solid rgb(211, 234, 253);
+    border-radius: 20px;
+}
+.Ckm .d1, .Ckm .d2, .Ckm .d3{
+    border: 3px solid rgb(211, 234, 253) ;
+    border-radius: 20px;
+}
+.Ckm .d .d2{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.Ckm .d .d1{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.Ckm .d .d3{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.Ckm .d{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    margin: 0px;
+    text-align: justify;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.e{
+    background-color: rgb(211, 234, 253);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color:#2b0c43;
+}
+footer img{
+    width: 150px;
+    height: 100px;
+    color: #000;
+    opacity: 1;
+}
+footer ul{
+    margin-left: 33%;
+}
+footer ul li a{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+footer ul li a i{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    padding-left: 7px;
+    padding-top: 5px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+footer ul li a i:hover{
+    background-color: rgb(93, 60, 255);
+    color: #000000;
+}
+.footer2{
+    margin-left: 25%;
+}
+.footer2 li a{
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+</style>
+<body>
+<div class="Ckm">
+    <nav class="nav">
+        <ul>
+          <img src="logo2-Photoroom.png-Photoroom.png" alt="logo" width="150px" height="100px">
+          <li><a href="index.html"><i class="fa fa-home" style="font-size:24px"></i>Home</a></li>
+
+          <div class="dropdown">
+          <li><a href="#place"><i class="fa fa-map-marker" style="font-size:24px"></i>Places</a></li>
+          <div class="dropdown-content">
+            <a href="ckm.html">CHIKKAMAGALURU</a><br><br><hr>
+            <a href="Hassan.html">HASSAN</a><br><br><hr>
+            <a href="Udupi-Mang.html">UDUPI-MANGLORE</a><br><br><hr>
+            <a href="Coorg.html">KODAGU</a><br><br><hr>
+            <a href="Mysuru.html">MYSURU</a><br><br><hr>
+            <a href="banglore.html">BENGALURU</a><br><br><hr>
+            <a href="Vijayapura.html">VIJAYAPURA</a><br><br><hr>
+            <a href="Vijaynagara.html" >VIJAYANAGARA</a><br><br><hr>
+            <a href="shivamogga.html" >SHIVAMOGA</a><br><br>
+          </div>
+          </div>
+
+          <li><a href="adventure.html"><i class='fa fa-flag' style='font-size:24px'></i>Adventure</a></li>
+            <li><a href="Celebrate.html"><i class="fa fa-star" style="font-size:24px"></i>Celebrate with us</a></li>
+            <li><a href="#location"><i style="font-size:24px" class="fa">&#xf276;</i>Location</a></li>
+            <li><a href="#footer"><i class="fa fa-phone" style="font-size:24px"></i>Contact us</a></li>
+        </ul>
+    </nav> 
+  <div class="a">
+    <center>
+    <h1 style="color:#2b0c43; font-size: 40px; padding-top: 30px;" ><i>Hassan..!</i></h1>
+    <h3 style="color:#2b0c43; font-size: 20px;" >The Heritage Site of Karnataka</h3>
+  </center>
+  </div>  
+  <div class="b">
+    <center>
+      <h2 style="color: #2b0c43;">Places to Visit</h2>
+    </center>
+  </div>
+    <div class="c">
+      <div class="c1">
+          <center>
+            <img src="https://tse4.mm.bing.net/th?id=OIP.CbTgKwmjG6VwiBLUttwBwgHaE9&pid=Api&P=0&h=180" alt="Image" width="300px" height="200px" class="imgc" style="padding-top: 20px;">
+            <h3><i><u>Chennakeshava Temple, Beluru</u></i></h3>
+          </center>
+          <p style="padding-left: 30px; padding-right: 30px;">&emsp;Chennakeshava Temple, also referred to as Keshava, Kesava or Vijayanarayana Temple of Belur, is a 12th-century Hindu temple in, Hassan district of Karnataka state, India.
+             It was commissioned by King Vishnuvardhana in 1117 CE, on the banks of the Yagachi River in Belur, an early Hoysala Empire capital.</p>
+             <h3 style="padding-left: 30px; padding-right: 30px;">How to reach Beluru Temple?</h3>
+            <p style="padding-left: 30px; padding-right: 30px;">&emsp; Belur has no nearby airport, and is about 220 kilometres (137 mi) west of Bengaluru (IATA Code: BLR),
+               about 3.5 hours drive accessible with a four lane NH75 highway. Hassan is the closest city near Belur that is connected by railway network to major cities of Karnataka.
+            </p>
+               <center>
+               <p>Duration: 1-2 hours</p>
+               <p>Best Season: Beluru Jatre or Beluru Festival</p>
+               <p>Region: Karnataka</p>
+              </center>
+      </div>
+      <div class="c2">
+          <center>
+            <img src="https://tse4.mm.bing.net/th?id=OIP.Ke-SwatWE546jIxHI8p1_AHaD2&pid=Api&P=0&h=180" alt="Image" width="300px" height="200px" class="imgc"  style="padding-top: 20px;">
+            <h3><i><u>Manjarabad Fort</u></i></h3>
+          </center>
+          <p style="padding-left: 30px; padding-right: 30px;"> &emsp; An iconic landmark and one of the most sought places to see in Karnataka is Manjarabad Fort. A star-shaped massive fort constructed by Tipu Sultan in 1792 is located at a height of 988 mts, approximately 3241 feet above sea level. 
+            On a clear sky day, people can also see the Arabian sea from the fort.</p>
+             <h3 style="padding-left: 30px; padding-right: 30px;">How to Manjarabad Fort?</h3>
+            <p style="padding-left: 30px; padding-right: 30px;">&emsp;Located in Sakleshpur of Hassan district, Manjarabad Fort can be reached best by road. 
+               It takes about 4 hours from Bangalore to reach Hassan. Manjarabad Fort is just 40 km from Hassan district headquarters. </p>
+               <center>
+               <ul></ul>
+               <p>Duration:1-2 hours</p>
+               <p>Best Season: Any season is suitable</p>
+               <p>Region: Karnataka</p>
+              </center>
+          </center>
+        </div>
+        <div class="c3">
+          <center>
+            <img src="https://tse4.mm.bing.net/th?id=OIP.0KLp-7uxymg4wle3D3CPXAHaEL&pid=Api&P=0&h=180" alt="Image" width="300px" height="200px" class="imgc" style="padding-top: 20px;">
+            <h3 ><i><u>Bettada Byraveshwara Temple</u></i></h3>
+          </center>
+          <p style="padding-left: 30px; padding-right: 30px;"> &emsp;Bettada Byraveshwara Temple is located on Pandavar Gudda Hill, near Mekanagadde, Sakleshpur in the Indian state of Karnataka. 
+            The temple is around 600 years old and believed that it was built by Pandavas during their exile.</p>
+             <h3 style="padding-left: 30px; padding-right: 30px;">How to reach Bettada Byraveshwara Temple?</h3>
+            <p style="padding-left: 30px; padding-right: 30px;">&emsp;By Train Sakleshpura Railway station is the nearest one to the temple at 32.4 km. You can get direct trains to Banglore.
+               By Air Mangalore International Airport is 135 km from Sakleshpura.You can get your domestic as well as international flights from here. </p>
+               <center>
+               <ul></ul>
+               <p>Duration:  2-3 hours</p>
+               <p>Best Season: Any season is suitable to visit</p>
+               <p>Region: Karnataka</p>
+              </center>
+          </center>
+        </div>
+  </div>
+  <div class="d">
+    <div class="d1">
+        <center>
+          <img src="https://tse1.mm.bing.net/th?id=OIP.SbVH7nF5WBaoVgCQkplYCgHaC-&pid=Api&P=0&h=180" alt="Image" width="300px" height="200px" class="imgc" style="padding-top: 20px;">
+          <h3 ><i><u>Hoysaleswara Temple,Halebeedu</u></i></h3>
+        </center>
+        <p style="padding-left: 30px; padding-right: 30px;">&emsp;Hoysaleswara temple, also referred simply as the Halebidu temple, is a 12th-century Hindu temple dedicated to the god Shiva. 
+          It is the largest monument in Halebidu, a town in the state of Karnataka, India and the former capital of the Hoysala Empire. </p>
+           <h3 style="padding-left: 30px; padding-right: 30px;">How to reach Hoysaleswara Temple?</h3>
+          <p style="padding-left: 30px; padding-right: 30px;">&emsp;By Air The nearest airport to Halebeedu is Bengaluru which is 210 kms and Mangaluru which is 170 kms from the temple.
+             By Rail Banavara is the nearest railway station which is located at about 30 km from the temple. Cabs and buses are readily available for devotees.</p>
+             <center>
+             <p>Duration: 1-2 hours</p>
+             <p>Best Season: Any season is suitable to visit</p>
+             <p>Region: Karnataka</p>
+            </center>
+    </div>
+    <div class="d2">
+        <center>
+          <img src="https://tse4.mm.bing.net/th?id=OIP.XTUZqZcwXhkCVlyprb5NWQHaE7&pid=Api&P=0&h=180" alt="Image" width="300px" height="200px" class="imgc" style="padding-top: 20px;">
+          <h3><i><u>Shetty Halli Rosary Church</u></i></h3>
+        </center>
+        <p style="padding-left: 30px; padding-right: 30px;"> &emsp;Shettihalli Church (referred to as Sathalli in colonial documents) is located 2km from Shettihalli, Hassan, in Karnataka. 
+          Built in the 1860s by the French missionaries in India, the church is a magnificent structure of Gothic Architecture. </p>
+           <h3 style="padding-left: 30px; padding-right: 30px;">How to reach Shetty Halli Rosary Church?</h3>
+          <p style="padding-left: 30px; padding-right: 30px;">&emsp;Regular buses are available for Shettihalli from Bengaluru. Moreover, regular buses ply from Hassan bus station for Shettihalli. You can ask the driver or conductor to drop you at the church.
+             The bus will drop you on a road leading to the church from where you will have to walk for 10 minutes to reach Rosary chapel ruins. </p>
+             <center>
+             <ul></ul>
+             <p>Duration:1-2 hours</p>
+             <p>Best Season: Any season is suitable to visit</p>
+             <p>Region: Karnataka</p>
+            </center>
+      </div>
+      <div class="d3">
+        <center>
+          <img src="https://tse1.mm.bing.net/th?id=OIP.6RlpPbjU8ZHnPLTAuCRRzwHaEK&pid=Api&P=0&h=180" alt="Image" width="300px" height="200px" class="imgc" style="padding-top: 20px;">
+          <h3 ><i><u>Hasanamba Temple</u></i></h3>
+        </center>
+        <p style="padding-left: 30px; padding-right: 30px;"> &emsp;Hasanamba temple is a Hindu temple located in Hassan, Karnataka, India, dedicated to the Goddess Shakti or Amba. 
+          The temple was built in the 12th century.The temple is opened once a year during the Hindu festival Deepavali in October. </p>
+           <h3 style="padding-left: 30px; padding-right: 30px;">How to Hasanamba Temple?</h3>
+          <p style="padding-left: 30px; padding-right: 30px;">&emsp;</p>
+             <center>Hassan is well connected to Bangalore, Mysore, Mangalore, Madikeri, Chickmagalore.
+               It is around 187 km from Bangalore and 115 km from Mysore. One can get frequent Govt. buses to Hassan from these cities/towns.
+              <ul></ul>
+              <p>Duration: 1-2 hours</p>
+              <p>Best Season: During Deepavali or Diwali(November)</p>
+              <p>Region: Karnataka</p>
+            </center>
+      </div>
+</div> 
+<div class="e">
+  <center>
+  <h2>Visit this place</h2>
+  <iframe id="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31098.8887264999!2d76.08338507732479!3d13.012662301511535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba548230ba42747%3A0xb0db4fb6b7a1f53f!2sHassan%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1715073353901!5m2!1sen!2sin" width="1500" height="450" style="border:0;" 
+  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</center>
+</div> 
+<!-- Start Footer -->
+<footer id="footer">
+  <center><img src="logo2-Photoroom.png-Photoroom.png" alt="Namma Nadu"></center>
+  <ul>
+      <li><a href="https://www.instagram.com/karnatakaworld/"><i class="fa fa-instagram" style="font-size:24px"></i></a></li>
+      <li><a href="https://www.facebook.com/KarnatakaWorld/"><i class="fa fa-facebook" style="font-size:24px"></i></a></li>
+      <li><a href="https://twitter.com/karnatakaworld?lang=en"><i class="fa fa-twitter" style="font-size:24px"></i></a></li>
+      <li><a href="www.youtube.com/@karnatakatourism7698"><i class="fa fa-youtube" style="font-size:24px"></i></a></li>
+      <li><a href="#"><i class="fa fa-phone" style="font-size:24px"></i></a></li>
+  </ul>
+
+  <ul class="footer2">
+      <li><a href="#home">Home<a></li>
+      <li><a href="#">Term & Conditions<a></li>
+      <li><a href="#">Privacy Policy<a></li>
+      <li><a href="#">Contact us<a></li>
+      <li><a href="#">FAQs<a></li>
+  </ul>
+
+</footer>
+<!-- End Footer -->
+</div>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coorg</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<style>
+  body{
+    background-color: rgb(211, 234, 253);
+    padding-top: 20px;
+   
+}
+html,body{
+    margin: 0%;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 720px;
+}
+.nav{
+    margin-left: -650px;
+}
+.nav ul li a{
+    color: #2b0c43;
+    margin-right: 35px;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    color: rgb(219, 15, 141);
+    text-decoration: none;
+}
+
+.nav ul li{
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.nav ul li a i{
+    margin-right: 5px;
+}
+.nav ul img{
+    margin-left: 70px;
+    margin-right: 200px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown a{
+    text-decoration: none;
+    color: #060f31;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(211, 234, 253);
+    min-width: 100px;
+    box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 5px;
+    top: 50px;
+    padding-top: 15px;
+    border: #060f31;
+    border-width: 1px;
+    border-style: solid;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown .dropdown-content a:hover{
+    color: #f800c2e1;
+    cursor: pointer;
+  }
+  
+img{
+    display: block;
+    margin: 0 auto;
+}
+.Ckm .a{
+    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4d/47/10/kodagu-coorg.jpg?w=1400&h=500&s=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 300px;
+    height: 100px;
+}
+
+.Ckm .c{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color:#2b0c43;
+    background-color: rgb(211, 234, 253); 
+    margin: 0px;
+    text-align: justify;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Ckm .c .c2{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.Ckm .c .c1{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.Ckm .c .c3{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.imgc{
+    margin-top: 20px;
+}
+.Ckm .c1, .Ckm .c2, .Ckm .c3{
+    border: 3px solid rgb(211, 234, 253);
+    border-radius: 20px;
+}
+.Ckm .d1, .Ckm .d2, .Ckm .d3{
+    border: 3px solid rgb(211, 234, 253) ;
+    border-radius: 20px;
+}
+.Ckm .d .d2{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.Ckm .d .d1{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.Ckm .d .d3{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.Ckm .d{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    margin: 0px;
+    text-align: justify;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.e{
+    background-color: rgb(211, 234, 253);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color:#2b0c43;
+}
+footer img{
+    width: 150px;
+    height: 100px;
+    color: #000;
+    opacity: 1;
+}
+footer ul{
+    margin-left: 33%;
+}
+footer ul li a{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+footer ul li a i{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    padding-left: 7px;
+    padding-top: 5px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+footer ul li a i:hover{
+    background-color: rgb(93, 60, 255);
+    color: #000000;
+}
+.footer2{
+    margin-left: 25%;
+}
+.footer2 li a{
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+</style>
+<body>
+<div class="Ckm">
+    <nav class="nav">
+        <ul>
+          <img src="logo2-Photoroom.png-Photoroom.png" alt="logo" width="150px" height="100px">
+          <li><a href="index.html"><i class="fa fa-home" style="font-size:24px"></i>Home</a></li>
+
+          <div class="dropdown">
+          <li><a href="#ckm"><i class="fa fa-map-marker" style="font-size:24px"></i>Places</a></li>
+          <div class="dropdown-content">
+            <a href="ckm.html">CHIKKAMAGALURU</a><br><br><hr>
+                    <a href="Hassan.html">HASSAN</a><br><br><hr>
+                    <a href="Udupi-Mang.html">UDUPI-MANGLORE</a><br><br><hr>
+                    <a href="Coorg.html">KODAGU</a><br><br><hr>
+                    <a href="Mysuru.html">MYSURU</a><br><br><hr>
+                    <a href="banglore.html">BENGALURU</a><br><br><hr>
+                    <a href="Vijayapura.html">VIJAYAPURA</a><br><br><hr>
+                    <a href="Vijaynagara.html" >VIJAYANAGARA</a><br><br><hr>
+                    <a href="shivamogga.html" >SHIVAMOGA</a><br><br>
+          </div>
+          </div>
+
+          <li><a href="adventure.html"><i class='fa fa-flag' style='font-size:24px'></i>Adventure</a></li>
+            <li><a href="Celebrate.html"><i class="fa fa-star" style="font-size:24px"></i>Celebrate with us</a></li>
+            <li><a href="#footer"><i class="fa fa-phone" style="font-size:24px"></i>Contact us</a></li>
+        </ul>
+    </nav> 
+  <div class="a">
+    <center>
+    <h1 style="color:#2b0c43; font-size: 40px; padding-top: 30px;" ><i>Coorg...!</i></h1>
+    <h3 style="color:#2b0c43; font-size: 20px;" >The Scotland and the coffee capital of India</h3>
+  </center>
+  </div>  
+  <div class="b">
+    <center>
+      <h2 style="color: #2b0c43;">Places to Visit</h2>
+    </center>
+  </div>
+    <div class="c">
+      <div class="c1">
+          <center>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/78/2c/57/abbey-falls.jpg?w=500&h=-1&s=1" alt="Image" width="300px" height="200px" class="imgc" style="padding-top: 20px;">
+            <h3><i><u>Abbey Falls</u></i></h3>
+          </center>
+          <p style="padding-left: 30px; padding-right: 30px;">&emsp;Abbey Falls, nestled in the heart of the lush Kodagu (Coorg) region, is a true testament to the mesmerizing beauty of Mother Nature. 
+            This captivating waterfall is a gem hidden within the verdant jungles of Western Ghats, and it beckons travelers from near and far to witness its awe-inspiring spectacle.</p>
+             <h3 style="padding-left: 30px; padding-right: 30px;">How to reach Abbey Falls?</h3>
+            <p style="padding-left: 30px; padding-right: 30px;">&emsp;Abbey Falls (also spelled Abbi Falls and Abbe Falls) is a waterfall in Kodagu, in the Western Ghats of Karnataka, India.
+               It is located 8 km from the Madikeri, 122 km from Mysore, 144 km from Mangalore and 268 km from Bangalore. </p>
+               <center>
+               <p>Duration: 2-3 hours</p>
+               <p>Best Season: June – February (Monsoon & Winter)</p>
+               <p>Region: Karnataka</p>
+              </center>
+      </div>
+      <div class="c2">
+          <center>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/c2/5b/2b/nature-1-14-largejpg.jpg?w=800&h=-1&s=1" alt="Image" width="300px" height="200px" class="imgc"  style="padding-top: 20px;">
+            <h3><i><u>Tadiandamol Peak</u></i></h3>
+          </center>
+          <p style="padding-left: 30px; padding-right: 30px;"> &emsp;Tadiandamol Trek is one of the most talked-about treks between trekkers starting out to their trekking journey in the Western Ghats and even experienced trekkers.
+             The trek also draws many visiting the famous hill town of Madikeri or Coorg. </p>
+             <h3 style="padding-left: 30px; padding-right: 30px;">How to reach Tadiandamol Peak?</h3>
+            <p style="padding-left: 30px; padding-right: 30px;">&emsp;The Tadiandamol trek is close to 12 km one way. It takes about four and a half hours to reach the peak.
+               And it takes about 3 hours to descend back to the base.Tadiandamol Peak is located in the Kodagu district of Karnataka.  </p>
+               <center>
+               <p>Max Altitude: 5,735 Feet</p>
+               <p>Distance:5-5.5 km</p>
+               <p>Duration:1 hour</p>
+               <p>Best Season: June – February (Monsoon & Winter)</p>
+              </center>
+          </center>
+        </div>
+        <div class="c3">
+          <center>
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/a5/c8/9c.jpg" alt="Image" width="300px" height="200px" class="imgc" style="padding-top: 20px;">
+            <h3 ><i><u>Classic Coorg Coffee Plantation</u></i></h3>
+          </center>
+          <p style="padding-left: 30px; padding-right: 30px;"> &emsp;Coorg is a mesmerising land of lush greenery, rolling hills, and aromatic coffee plantations. 
+            Situated in Karnataka, one of the top coffee-producing states in India, Coorg is a haven for coffee enthusiasts and nature lovers alike.</p>
+             <h3 style="padding-left: 30px; padding-right: 30px;">How to reach Classic Coorg Coffee Plantation?</h3>
+            <p style="padding-left: 30px; padding-right: 30px;">&emsp;Old Kent Estates & Spa (Suntikoppa): For those seeking a luxurious coffee plantation visit in Coorg, Old Kent Estates & Spa is the perfect destination.
+               The estate features a colonial-era bungalow that has been transformed into a luxury resort, offering panoramic views of the surrounding coffee plantations.</p>
+               <center>
+               <p>Duration: 1hour</p>
+               <p>Best Season: November(Harvesting Season)</p>
+               <p>Region: Karnataka</p>
+              </center>
+          </center>
+        </div>
+  </div>
+  <div class="d">
+    <div class="d1">
+        <center>
+          <img src="https://tse1.mm.bing.net/th?id=OIP.im7Yh45UfFCL9hj4Jj_9kgHaFe&pid=Api&P=0&h=180" alt="Image" width="300px" height="200px" class="imgc" style="padding-top: 20px;">
+          <h3 ><i><u>Raja's Seat</u></i></h3>
+        </center>
+        <p style="padding-left: 30px; padding-right: 30px;">&emsp;Raja's Seat is located in the middle of a garden called as Gandhi Mantap. It is a structure made of brick and mortar and consists of four pillars that are bridged by arches. 
+          This place was used by the Kings and the Queens of Kodagu who were the rulers of Karnataka for over 200 years from 1600 to 1834 CE.</p>
+           <h3 style="padding-left: 30px; padding-right: 30px;">How to Raja's Seat?</h3>
+          <p style="padding-left: 30px; padding-right: 30px;">&emsp;About 1 km west of the Madikeri bus stand is Raja’s Seat. Popular lore claims that Kodava kings their consorts spent their evenings in the fine park here.
+             It is easy to see why: dramatic views of an orange sun dipping behind the mountains can mesmerize both royals and commoners.  </p>
+             <center>
+             <p>Duration: 1-2 hours</p>
+             <p>Best Season: June – February (Monsoon & Winter)</p>
+             <p>Region: Karnataka</p>
+            </center>
+    </div>
+    <div class="d2">
+        <center>
+          <img src="https://tse3.mm.bing.net/th?id=OIP.LJ7XODIhoCOmBn6lm9BK6gHaFj&pid=Api&P=0&h=180" alt="Image" width="300px" height="200px" class="imgc" style="padding-top: 20px;">
+          <h3><i><u>Dubare Elephant Camp</u></i></h3>
+        </center>
+        <p style="padding-left: 30px; padding-right: 30px;"> &emsp;Elephant ride is the most popular activity at Dubare Elephant Camp. Visitors can participate in various activities involving elephants.
+           Visitors can go for three hour elephant interaction at the Dubare Elephant Camp. </p>
+           <h3 style="padding-left: 30px; padding-right: 30px;">How to reach Dubare Elephant Camp?</h3>
+          <p style="padding-left: 30px; padding-right: 30px;">&emsp;The nearest airport to Dubare Elephant Camp is Mangalore Airport, at a distance of 180 km. From there one can take a bus or hire a taxi to reach the camp. The nearest railway station to Coorg is Mysore Railway Station which is located at a distance of 100 km. 
+            From there, one can book a Mysore to Coorg cab to reach the place.</p>
+             <center>
+             <ul></ul>
+             <p>Duration:1-2 hours</p>
+             <p>Best Season: February-May(Summer)</p>
+             <p>Region: Karnataka</p>
+            </center>
+      </div>
+      <div class="d3">
+        <center>
+          <img src="https://tse1.mm.bing.net/th?id=OIP.ay6koDY3Tiabg7a_QMm19AHaEX&pid=Api&P=0&h=180" alt="Image" width="300px" height="200px" class="imgc" style="padding-top: 20px;">
+          <h3 ><i><u>Talakaveri</u></i></h3>
+        </center>
+        <p style="padding-left: 30px; padding-right: 30px;"> &emsp;According to legend, Cauvery was held captive by sage Agasthya in a Kamandala, a pot carrying sacred water.
+           Lord Ganesha in the form of a crow made the Kamandala to topple at this hill when Sage Agasthya was meditating. There is a shrine dedicated to Kaveri Amman near the kundike and a big tank in front of it where devotees baths before offering prayers. The temple was renovated by the state government in 2007.
+        </p>
+           <h3 style="padding-left: 30px; padding-right: 30px;">How to Talakaveri?</h3>
+          <p style="padding-left: 30px; padding-right: 30px;">&emsp;At a distance of 9 km from Bhagamandala & 44 km from Madikeri, Talacauvery is the origin of the Cauvery River in Karnataka. It is situated on the slopes of the Brahmagiri mountain ranges near Bhagamandala at an altitude of 1276 m. 
+            It is one of the best places to visit in Coorg and is among prime place to visit on a Coorg trip.</p>
+             <center>
+              <p>Duration: 1-2 hours</p>
+              <p>Best Season: Tula Sankramana(October)</p>
+              <p>Region: Karnataka</p>
+            </center>
+      </div>
+</div> 
+<div class="e">
+  <center>
+  <h2>Visit Coorg!</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498816.6044113461!2d75.44778064713557!3d12.38261560331535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5aaa23e0be16b%3A0x50fd1f82359ea370!2sKodagu%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1715016041793!5m2!1sen!2sin" 
+  width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</center>
+</div> 
+
+<!-- Start Footer -->
+<footer id="footer" >
+  <center><img src="logo2-Photoroom.png-Photoroom.png" alt="Namma Nadu"></center>
+  <ul>
+      <li><a href="https://www.instagram.com/karnatakaworld/"><i class="fa fa-instagram" style="font-size:24px"></i></a></li>
+      <li><a href="https://www.facebook.com/KarnatakaWorld/"><i class="fa fa-facebook" style="font-size:24px"></i></a></li>
+      <li><a href="https://twitter.com/karnatakaworld?lang=en"><i class="fa fa-twitter" style="font-size:24px"></i></a></li>
+      <li><a href="www.youtube.com/@karnatakatourism7698"><i class="fa fa-youtube" style="font-size:24px"></i></a></li>
+      <li><a href="#"><i class="fa fa-phone" style="font-size:24px"></i></a></li>
+  </ul>
+
+  <ul class="footer2">
+      <li><a href="#home">Home<a></li>
+      <li><a href="#">Term & Conditions<a></li>
+      <li><a href="#">Privacy Policy<a></li>
+      <li><a href="#">Contact us<a></li>
+      <li><a href="#">FAQs<a></li>
+  </ul>
+
+</footer>
+<!-- End Footer -->
+</div>
+</body>
+</html>

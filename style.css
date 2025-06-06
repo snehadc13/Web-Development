@@ -1,0 +1,562 @@
+
+html,body{
+    margin: 0%;
+    background-color: #7FC7D9;
+}
+header{
+    background-color: #7FC7D9;
+    padding-top: 20px; 
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    position: relative;
+}
+.nav{
+    padding-top: 10px;
+    position: relative;
+}
+.nav ul li a{
+    color: #000000;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    color: rgb(219, 15, 141);
+}
+.nav ul li{
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.nav ul li a i{
+    padding-left: 10px;
+    padding-right:10px;
+}
+.nav ul img{
+    margin-left: 50px;
+    margin-right: 150px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+/* Dropdown menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown a{
+    text-decoration: none;
+    color: #060f31;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(211, 234, 253);
+    min-width: 100px;
+    box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 5px;
+    top: 50px;
+    padding-top: 15px;
+    border: #060f31;
+    border-width: 1px;
+    border-style: solid;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown .dropdown-content a:hover{
+    color: #f800c2e1;
+    cursor: pointer;
+  }
+
+/* slideshow */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: -20px;
+    overflow: hidden;
+  }
+  /* Hide the slideby default */
+  .slides {
+    display: none;
+  }  
+  /* Fading animation */
+  .fade {
+    animation: ease-in-out 5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+.slideshow-container img{
+    height: 500px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.slideshow-container hr{
+    color:#011049;
+}
+.cardbody-slide{
+    height: 200px;
+    width: 100%;
+    right: -100%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    /* border-radius:12px;   */
+    transform: 3s ease;
+}
+.slideshow-container:hover .cardbody-slide{
+    right: 0px;
+    top: 330px;
+}
+.carditem h2{
+    color: #fff;
+    margin-left: 500px;
+}
+.kar{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 6px #575656;
+    text-align: center;
+    font-size: 30px;
+    font-family:cursive;
+}
+
+/* work travel save repeat */
+.work{
+    text-align: center;
+    background-color: #DCF2F1;
+    margin-top: 0px;
+}
+.work img{
+    height: 120px;
+}
+.work-icon ul{
+    display: flex;
+}
+.work-icon ul li a{
+    text-decoration: none;
+    color: #3a0303;
+    padding-left: 25px;
+}
+.work-icon ul li a img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 180px;
+}
+.work-icon ul li a img:hover{
+    transform: scale(0.6);
+}
+.work-icon ul h4{
+    color: #747272;
+    margin-top: 10px;
+}
+.work-icon ul span{
+    color: #041c70;
+    font-size:20px;
+}
+
+/* Popup */
+.popup{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    opacity: 0.9;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.popup-content{
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 500px;
+    width: 80%;
+    background: #020335;
+    opacity: 1;
+    color: #fff;
+    position: fixed;
+    overflow-y:scroll;
+}
+.popup-content a i{
+    margin-left: 1050px;
+    color:#fdfdfd;
+    position: relative;
+}
+.popup-content a i:hover{
+    color: rgb(255, 0, 0);
+}
+.popup ul{
+    display: contents;
+}
+.popup-ul{
+    display: flex;
+    margin-left: 200px;
+}
+/* places  */
+.place{
+    padding: 25px;
+    padding-top: 3px;
+    max-width: 98%;
+}
+.place p{
+    color: #fff; 
+    font-size: 15px; 
+    align-items: center;
+    margin-left: -35px;
+}
+.place h2{
+    font-family: cursive;
+    text-shadow: #c2c2c2 2px 4px;
+    font-size: 30px;
+}
+.slide-wrapper{
+    position: relative;
+}
+.slide-wrapper .slidebutton{
+    position: absolute;
+    top: 170px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+    size: 20px;
+    cursor:pointer;
+    border-radius: 30%;
+    width: 25px;
+    height: 25px;
+    transform: translateY(-50%);
+}
+.slide-wrapper .slidebutton:hover{
+    color: #28a4b9;
+}
+.slide-wrapper .slidebutton#prev-slide{
+    left: -28px;
+}
+.slide-wrapper .slidebutton#next-slide{
+    right: -28px;
+}
+.slide-wrapper .img-list{
+    display: grid;
+    gap:8px;
+    grid-template-columns: repeat(10, 1fr);
+    font-size: 0;
+    overflow: auto;
+    scrollbar-width: none;
+    margin-bottom: 30px;
+}
+.slide-wrapper .img-list::-webkit-scrollbar{
+    display: none;
+}
+.slide-wrapper .img-list .image-item{
+    width: 250px;
+    height: 325px;
+    object-fit: cover;
+}
+marquee{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000;
+}
+
+/* slide hover */
+.slide-wrapper .img-list .card{
+    width: 250px;
+    height: 325px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #fff;
+    position: relative;
+}
+.image-item{
+    width: 250px;
+    height: 325px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.cardbody1, .cardbody2, .cardbody3, .cardbody4, .cardbody5, .cardbody6, .cardbody7, .cardbody8, .cardbody9, .cardbody10{
+    width: 250px;
+    height: 325px;
+    top: 0px;
+    right: -250px;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;  
+    transform: 3s ease;
+}
+.card:hover .cardbody1, .card:hover .cardbody2, .card:hover .cardbody3,.card:hover .cardbody4,.card:hover .cardbody5{
+    right: 0px;
+}
+.card:hover .cardbody6, .card:hover .cardbody7, .card:hover .cardbody8,.card:hover .cardbody9,.card:hover .cardbody10{
+    right: 0px;
+}
+.carditem{
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* food list */
+.food{
+    padding: 25px;
+    padding-top: 5px;
+    max-width: 100%;
+    margin-left: 6px;
+    height: 400px;
+}
+.food h2{
+    font-family: cursive;
+    text-shadow: #c2c2c2 2px 4px;
+    font-size: 30px;
+}
+.foodcard{
+    display: flex;
+}
+.maincard{
+    position: relative;
+    padding-top: 12px;
+    width: 300px;
+    height: 225px;
+    transform: 1s;
+}
+.maincard:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.flipcard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease;
+}
+.flipcard:hover{
+    transform: rotateY(180deg);
+}
+.front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    backface-visibility: hidden;
+    background: #794545;
+    color: #333;
+}
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    backface-visibility: hidden;
+    background: #080808;
+    opacity: 0.8;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+.back h3{
+    padding-left: 25px;
+}
+.back h3 p{
+    size: 20px;
+    justify-content: center;
+}
+
+
+/* Things */
+.things{
+    padding: 25px;
+    padding-top: 5px;
+    max-width: 100%;
+    margin-left: 6px;
+    height: 400px;
+}
+.things h2{
+    font-family: cursive;
+    text-shadow: #c2c2c2 2px 4px;
+    font-size: 30px;
+}
+.things h3{
+    text-shadow: #0a0a0a 1px 2px;
+    font-size:15px;
+}
+.things p{
+    font-size:12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card-thing{
+    overflow: hidden;
+    position: relative;
+    padding-left: 10px;
+}
+.thingcard{
+    display: flex;
+}
+.cardimg-thing{
+    position: relative;
+    padding-top: 12px;
+    width: 250px;
+    height: 250px;
+    transform: 1s;
+}
+.cardbody{
+    width: 250px;
+    height: 250px;
+    top: 12px;
+    right: -300px;
+    position: absolute;
+    background: #22252538;
+    backdrop-filter: blur(25px);
+    transform: 3s ease;
+}
+.card-thing:hover .cardbody{
+    right: 0px;
+}
+.card-thing:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+.carditem-thing{
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* About us */
+.about{
+    padding: 25px;
+    padding-top: 3px;
+    max-width: 100%;
+}
+.about h2{
+    font-family: cursive;
+    text-shadow: #c2c2c2 2px 4px;
+    font-size: 30px;
+}
+.about .aboutimg img{
+    width: 400px;
+    height: 200px;
+    margin-left: 850px;
+    margin-top: -180px;
+}
+
+/* blog */
+.blog{
+    padding-top: 3px;
+    background-color: #DCF2F1;
+    max-width: 100%;
+}
+.blog .experience{
+    display: flex;
+    margin-top: -30px;
+    margin-left: 150px;
+}
+.blog .experience img{
+    height: 300px;
+    width: 250px;
+    padding-left: 100px;
+}
+.blog .blogin{
+    margin-left: 100px;
+    padding-top: 50px;
+}
+.blog .blogin input{
+    text-decoration: none;
+    background: none;
+    align-self: center;
+    width: 450px;
+    height: 30px;
+    border-radius: 8px;
+}
+.blog label{
+    font-size: 20px;
+    font-family: cursive;
+    text-shadow: #c2c2c2 2px 3px;
+}
+#b{
+    height: 80px;
+}
+#b:hover, #b2:hover, #b1:hover{
+    background-color: #7FC7D9;
+    color: #ffffff;
+}
+#b1{
+    margin-left: 12px;
+}
+#b2{
+    margin-left: 8px;
+}
+.blog h2{
+    font-family: cursive;
+    text-shadow: #c2c2c2 2px 3px;
+    font-size: 30px;
+}
+.blog button{
+    background: none;
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: #504f4f 2px 2px;
+    margin-left: 200px;
+}
+.blog button:hover{
+    background-color: #0eb14c;
+    color: white;
+}
+/* FOOTER */
+footer img{
+    width: 150px;
+    height: 100px;
+    color: #000;
+    opacity: 1;
+}
+footer ul{
+    margin-left: 33%;
+}
+footer ul li a{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+footer ul li a i{
+    background-color: rgb(67, 129, 138);
+    width: 30px;
+    height: 30px;
+    padding-left: 7px;
+    padding-top: 5px;
+    border-radius: 50%;
+    color: #000000;
+}
+footer ul li a i:hover{
+    background-color: rgb(1, 15, 43);
+    color: #ffffff;
+}
+.footer2{
+    margin-left: 25%;
+}
+.footer2 li a{
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chickmagalore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<style>
+  body{
+    background-color: rgb(211, 234, 253);
+    padding-top: 20px;
+   
+}
+html,body{
+    margin: 0%;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 720px;
+}
+.nav{
+    margin-left: -650px;
+}
+.nav ul li a{
+    color: #2b0c43;
+    margin-right: 35px;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    color: rgb(219, 15, 141);
+    text-decoration: none;
+}
+
+.nav ul li{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.nav ul li a i{
+    margin-right: 5px;
+}
+.nav ul img{
+    margin-left: 20px;
+    margin-right: 100px;
+    margin-top: -30px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown a{
+    text-decoration: none;
+    color: #060f31;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(211, 234, 253);
+    min-width: 100px;
+    box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 5px;
+    top: 50px;
+    padding-top: 15px;
+    border: #060f31;
+    border-width: 1px;
+    border-style: solid;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown .dropdown-content a:hover{
+    color: #f800c2e1;
+    cursor: pointer;
+  }
+
+  
+img{
+    display: block;
+    margin: 0 auto;
+}
+.Ckm .a{
+    background-image: url(ckm5.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    padding-top: 100px;
+}
+
+.Ckm .c{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color:#2b0c43;
+    background-color: rgb(211, 234, 253); 
+    margin: 0px;
+    text-align: justify;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Ckm .c .c2{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.Ckm .c .c1{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.Ckm .c .c3{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+
+
+.imgc{
+    margin-top: 20px;
+}
+.Ckm .c1, .Ckm .c2, .Ckm .c3{
+    border: 3px solid rgb(211, 234, 253);
+    border-radius: 20px;
+}
+.Ckm .d1, .Ckm .d2, .Ckm .d3{
+    border: 3px solid rgb(211, 234, 253) ;
+    border-radius: 20px;
+}
+.Ckm .d .d2{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.Ckm .d .d1{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.Ckm .d .d3{
+    max-width: 33.3%;
+    background-color: #2b0c43;
+    color:rgb(211, 234, 253);
+}
+.Ckm .d{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    margin: 0px;
+    text-align: justify;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.e{
+    background-color: rgb(211, 234, 253);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color:#2b0c43;
+}
+footer img{
+    width: 150px;
+    height: 100px;
+    color: #000;
+    opacity: 1;
+}
+footer ul{
+    margin-left: 33%;
+}
+footer ul li a{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+footer ul li a i{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    padding-left: 7px;
+    padding-top: 5px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+footer ul li a i:hover{
+    background-color: rgb(93, 60, 255);
+    color: #000000;
+}
+.footer2{
+    margin-left: 25%;
+}
+.footer2 li a{
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+</style>
+<body>
+<div class="Ckm">
+    <nav class="nav">
+        <ul>
+          <img src="logo2-Photoroom.png-Photoroom.png" alt="logo" width="150px" height="100px">
+          <li><a href="#home"><i class="fa fa-home" style="font-size:24px"></i>Home</a></li>
+
+          <div class="dropdown">
+          <li><a href="#place"><i class="fa fa-map-marker" style="font-size:24px"></i>Places</a></li>
+          <div class="dropdown-content">
+            <a href="ckm.html">CHIKKAMAGALURU</a><br><br><hr>
+            <a href="Hassan.html">HASSAN</a><br><br><hr>
+            <a href="Udupi-Mang.html">UDUPI-MANGLORE</a><br><br><hr>
+            <a href="Coorg.html">KODAGU</a><br><br><hr>
+            <a href="Mysuru.html">MYSURU</a><br><br><hr>
+            <a href="banglore.html">BENGALURU</a><br><br><hr>
+            <a href="Vijayapura.html">VIJAYAPURA</a><br><br><hr>
+            <a href="Vijaynagara.html" >VIJAYANAGARA</a><br><br><hr>
+            <a href="shivamogga.html" >SHIVAMOGA</a><br><br>
+        </div>
+          </div>
+
+          <li><a href="adventure.html"><i class='fa fa-flag' style='font-size:24px'></i>Adventure</a></li>
+            <li><a href="Celebrate.html"><i class="fa fa-star" style="font-size:24px"></i>Celebrate with us</a></li>
+            <li><a href="#location"><i style="font-size:24px" class="fa">&#xf276;</i>Location</a></li>
+            <li><a href="#footer"><i class="fa fa-phone" style="font-size:24px"></i>Contact us</a></li>
+        </ul>
+    </nav> 
+  <div class="a">
+    <center>
+    <h1 style="color:#2b0c43; font-size: 40px; padding-top: 30px;" ><i>Chickmagaluru...</i></h1>
+    <h3 style="color:#2b0c43; font-size: 20px;" >Traveler's Paradise</h3>
+  </center>
+  </div>  
+  <div class="b">
+    <center>
+      <h2 style="color: #2b0c43;">Places to Visit</h2>
+    </center>
+  </div>
+    <div class="c">
+      <div class="c1">
+          <center>
+            <img src="kudremukh.jpg" alt="Image" width="300px" height="200px" class="imgc">
+            <h3><i><u>Kudremukha</u></i></h3>
+          </center>
+          <p style="padding-left: 30px; padding-right: 30px;">&emsp;Kudremukha is the name of a mountain range and an individual mountain peak located in Chikmagalur district, in Karnataka, India. It is also the name of a small hill station and iron ore-mining town situated near the mountain,
+             about 20 kilometres from Kalasa in Kalasa Taluk.</p>
+             <h3 style="padding-left: 30px; padding-right: 30px;">How to reach Kudremukh Peak?</h3>
+            <p style="padding-left: 30px; padding-right: 30px;">&emsp;The Kudremukh trek starts from Mullodi village which is around 15 km from Kalasa. Reaching Mullodi directly is not easy. 
+You have to first reach Kudremukh Entrance which is about 10 km from Kalasa. From the Entrance point, hire a jeep to Mullodi village where you get the forest office.
+               This is where you have to take permission and begin your trek. </p>
+               <center>
+                <p>Max Altitude: 6,214 Feet (1,894M)</p>
+               <p>Distance: 18-21 KMs</p>
+               <p>Difficulty: Moderate</p>
+               <p>Duration: 8-10 hours</p>
+               <p>Ideal For: Both Intermediate & Experienced Trekkers</p>
+               <p>Best Season: June – February (Monsoon & Winter)</p>
+               <p>Region: Karnataka</p>
+              </center>
+      </div>
+      <div class="c2">
+          <center>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.gwWnk7KS8YaRXfiMGV1bcgHaEK&pid=Api&P=0&h=180" alt="Image" width="300px" height="200px" class="imgc">
+            <h3><i><u>Mullayanagiri</u></i></h3>
+          </center>
+          <p style="padding-left: 30px; padding-right: 30px;"> &emsp;Mullayyanagiri is the highest peak in Karnataka, India. Mullayyanagiri is located in the Chandra Dhrona Hill Ranges of the Western Ghats of Chikkamagaluru Taluk.
+             With a height of 1,925 metres (6,316 ft), it is the highest peak in Karnataka and also the 23rd highest peak in Western Ghats.</p>
+             <h3 style="padding-left: 30px; padding-right: 30px;">How to reach Mullayanagiri Peak?</h3>
+            <p style="padding-left: 30px; padding-right: 30px;">&emsp;Mullayyanagiri is located in Chikkamagaluru district, 265 km from Bengaluru.
+               Mullayanagiri is a nature lover’s paradise and a must-visit spot in South Karnataka.The calming ambience of the hills makes tourists relish their visit. 
+               The lush green fields, rugged rocks, and misty weather add to the place's charm. </p>
+               <center>
+               <ul></ul>
+               <p>Max Altitude: 6,316 Feet (1,925M)</p>
+               <p>Trek starts from: Sarpadari</p>
+               <p>Distance:10km</p>
+               <p>Duration:3 hours</p>
+               <p>Ideal For: Both Intermediate & Experienced Trekkers</p>
+               <p>Best Season: June – February (Monsoon & Winter)</p>
+               <p>Region: Karnataka</p>
+              </center>
+          </center>
+        </div>
+        <div class="c3">
+          <center>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.xmNZApixWYOd5Z9Wbp4rPwHaE8&pid=Api&P=0&h=180" alt="Image" width="300px" height="200px" class="imgc">
+            <h3 ><i><u>Rani Jhari</u></i></h3>
+          </center>
+          <p style="padding-left: 30px; padding-right: 30px;"> &emsp;Rani Jhari, a hidden gem near Chikmagalur, is a viewpoint offering spellbinding views.
+            Rani Jhari Edge Point is an unexplored trekking point.As per the local people, the peak assumes its name after Rani Padmini Devi, 
+            who leapt from there to escape Tipu Sultan of Mysore.</p>
+             <h3 style="padding-left: 30px; padding-right: 30px;">How to reach Rani Jhari peak?</h3>
+            <p style="padding-left: 30px; padding-right: 30px;">&emsp;Nature decided that it had given us enough time to savour the scenery and put the entire area under the blanket of mist. It was a signal for us to move down!! Rani Jhari is a view point near Kalasa in Chikmaglur district. 
+              It provides stunning view of the edge of western ghats and Ballalarayana durga.</p>
+               <center>
+               <ul></ul>
+               <p>Starts from: Kalabhairaveshvara Temple,DurgadaHalli</p>
+               <p>Distance: 1.5-2KMs</p>
+               <p>Difficulty: Moderate</p>
+               <p>Duration: 30-45 minutes</p>
+               <p>Ideal For: Both Intermediate & Experienced Trekkers</p>
+               <p>Best Season: June – February (Monsoon & Winter)</p>
+               <p>Region: Karnataka</p>
+              </center>
+          </center>
+        </div>
+  </div>
+  <div class="d">
+    <div class="d1">
+        <center>
+          <img src="https://tse2.mm.bing.net/th?id=OIP.GS3oHKDXk0bmTyPuf1NQXQHaFj&pid=Api&P=0&h=180" alt="Image" width="300px" height="200px" class="imgc">
+          <h3 ><i><u>Sringeri sharada peetham</u></i></h3>
+        </center>
+        <p style="padding-left: 30px; padding-right: 30px;">&emsp;The Sringeri matha includes two major temples. One is dedicated to Shiva and is called the Vidya Shankara temple, the other to Saraswati and is called the Sharada Amba temple.
+           The earliest version of the Shiva temple was built in the 14th century, of goddess Saraswati in the 15th century.</p>
+           <h3 style="padding-left: 30px; padding-right: 30px;">How to reach Sringeri sharada peetham?</h3>
+          <p style="padding-left: 30px; padding-right: 30px;">&emsp;Sri Sharada Peetham is located in Sringeri about 85 kilometres (53 mi) east of Udupi and 100 kilometres (62 mi) northeast from Mangaluru across the Western Ghats, and about 335 kilometres (208 mi) west-northwest from the state capital, Bengaluru.
+            Sringeri can be accessed from Bangalore and Mangalore via road. </p>
+             <center>
+             <p>Duration: 1-2 hours</p>
+             <p>Best Season: June – February (Monsoon & Winter)</p>
+             <p>Region: Karnataka</p>
+            </center>
+    </div>
+    <div class="d2">
+        <center>
+          <img src="https://tse2.mm.bing.net/th?id=OIP.8dm-CGlry4rSRNxuM-WmtQHaE_&pid=Api&P=0&h=180" alt="Image" width="300px" height="200px" class="imgc">
+          <h3><i><u>Hirekolale Lake</u></i></h3>
+        </center>
+        <p style="padding-left: 30px; padding-right: 30px;"> &emsp;Tucked away amid the Western Ghats’ verdant embrace, Hirekolale Lake stands as a beacon of tranquility amidst the bustling energy of Chikmagalur. This pristine water body, 
+          famed for its captivating sunsets and serene atmosphere, symbolizes the region’s rich history and cultural tapestry. </p>
+           <h3 style="padding-left: 30px; padding-right: 30px;">How to reach Hirekolale Lake?</h3>
+          <p style="padding-left: 30px; padding-right: 30px;">&emsp;The beautiful town of Chikmagalur literally means younger daughter’s town in the native language of Karnataka which is Kannada. A place filled with beautiful scenic places and breathtaking locations, the area is spread across 30 km2. 
+            Located at a distance of 250 kilometres from Bengaluru. </p>
+             <center>
+             <ul></ul>
+             <p>Duration:1-2 hours</p>
+             <p>Best Season: June – February (Monsoon & Winter)</p>
+             <p>Region: Karnataka</p>
+            </center>
+      </div>
+      <div class="d3">
+        <center>
+          <img src="https://tse3.mm.bing.net/th?id=OIP.xbJPHy_oS-ELQ2R_Y3FQbQHaE8&pid=Api&P=0&h=180" alt="Image" width="300px" height="200px" class="imgc">
+          <h3 ><i><u>Hebbe Falls</u></i></h3>
+        </center>
+        <p style="padding-left: 30px; padding-right: 30px;"> &emsp;Hebbe Falls is situated at 13°32′29″N 75°43′30″E about 10 km away from the famous hill station Kemmangundi in Karnataka, India.
+           This waterfalls is inside a coffee estate and can be reached either by walk or four-wheeler. </p>
+           <h3 style="padding-left: 30px; padding-right: 30px;">How to reach Hebbe Falls?</h3>
+          <p style="padding-left: 30px; padding-right: 30px;">&emsp;The option of trekking is available (as of Aug 2016), but the place is filled with leeches especially in the rainy season. The best option is to take a government approved forest jeep which goes through private estates.
+             The last kilometer needs to be trekked in order to reach the falls.</p>
+             <center>
+              <ul></ul>
+              <p>Duration: 1-2 hours</p>
+              <p>Best Season: June – November (Monsoon & Winter)</p>
+              <p>Region: Karnataka</p>
+            </center>
+      </div>
+</div> 
+<div class="e">
+  <center>
+  <h2>Visit Us!</h2>
+  <iframe id="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62121.548457953744!2d75.73124871516983!3d13.313109880669254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbad762c8a889dd%3A0xb3cf49155294be16!2sChikkamagaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1715011493671!5m2!1sen!2sin" width="1500" height="450" style="border:0; background-size: cover;" 
+  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+</center>
+</div> 
+
+<!-- Start Footer -->
+<footer id="footer">
+  <center><img src="logo2-Photoroom.png-Photoroom.png" alt="Namma Nadu"></center>
+  <ul>
+      <li><a href="https://www.instagram.com/karnatakaworld/"><i class="fa fa-instagram" style="font-size:24px"></i></a></li>
+      <li><a href="https://www.facebook.com/KarnatakaWorld/"><i class="fa fa-facebook" style="font-size:24px"></i></a></li>
+      <li><a href="https://twitter.com/karnatakaworld?lang=en"><i class="fa fa-twitter" style="font-size:24px"></i></a></li>
+      <li><a href="www.youtube.com/@karnatakatourism7698"><i class="fa fa-youtube" style="font-size:24px"></i></a></li>
+      <li><a href="#"><i class="fa fa-phone" style="font-size:24px"></i></a></li>
+  </ul>
+
+  <ul class="footer2">
+      <li><a href="#home">Home<a></li>
+      <li><a href="#">Term & Conditions<a></li>
+      <li><a href="#">Privacy Policy<a></li>
+      <li><a href="#">Contact us<a></li>
+      <li><a href="#">FAQs<a></li>
+  </ul>
+
+</footer>
+<!-- End Footer -->
+
+</div>
+</body>
+</html>

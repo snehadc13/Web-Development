@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: #7FC7D9;
+    padding-top: 20px; 
+}
+/* :target{
+    scroll-margin-top: 200px;
+} */
+html,body{
+    margin: 0%;
+    background-color: #7FC7D9;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    position: relative;
+}
+.nav{
+    padding-top: 10px;
+    position: relative;
+}
+.nav ul li a{
+    color: #000000;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    color: rgb(219, 15, 141);    
+}
+
+
+.nav ul li{
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.nav ul li a i{
+    padding-left: 15px;
+    padding-right:15px;
+    
+}
+.nav  li i{
+    margin-right:-5px ;
+}
+.nav ul img{
+    margin-left: -500px;
+    margin-right: 150px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+
+  
+/* Dropdown menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown a{
+    text-decoration: none;
+    color: #060f31;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(211, 234, 253);
+    min-width: 100px;
+    box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 5px;
+    top: 50px;
+    padding-top: 15px;
+    border: #060f31;
+    border-width: 1px;
+    border-style: solid;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown .dropdown-content a:hover{
+    color: #f800c2e1;
+    cursor: pointer;
+  }
+
+
+ul{
+    display:flex;
+    margin-left: 650px;
+    
+}
+.class h1{
+    font-style: italic;
+}
+
+
+
+
+button{
+    background-color:rgb(151, 243, 243,0.5);
+}
+
+.class1{
+    background-image: url(adventure.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    
+
+}
+.class2 h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: -10%;
+}
+.places{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box{
+    height:500px;
+    width:400px;
+    padding: 20px 0px 15px;
+}
+.box img{
+    width: 400px;
+    height: 400px;
+}
+.card{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.cardimg{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.cardbody{
+    width: 400px;
+    height: 400px;
+    top: 0px;
+    right: -400px;
+    position: absolute;
+    background: #323236ec;
+    opacity: 0.7;
+    backdrop-filter: blur(10px);
+    transform: 3s ease;
+}
+.card:hover .cardbody{
+    right: 0px;
+}
+.carditem{
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.carditem p{
+    color: white;
+    padding-top: 20px;
+    margin: 20px 20px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-spacing: 5px;
+}
+.footer-class h1{
+    background-color: rgb(211, 234, 253);
+    height: 100px;
+    color: black;
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 20px;
+}
+body{
+    background-color: #DCF2F1;
+}
+footer img{
+    width: 150px;
+    height: 100px;
+    color: #000;
+    opacity: 1;
+}
+footer ul{
+    margin-left: 33%;
+}
+footer ul li a{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+footer ul li a i{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    padding-left: 7px;
+    padding-top: 5px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+footer ul li a i:hover{
+    background-color: rgb(93, 60, 255);
+    color: #000000;
+}
+.footer2{
+    margin-left: 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer2 li a{
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+
+ 
+    </style>
+    
+
+</head>
+<body>
+    <header>
+    <nav class="nav">
+        <ul>
+            <img src="logo2-Photoroom.png-Photoroom.png" alt="logo" width="150px" height="100px">
+            <li><a href="#home"><i class="fa fa-home" style="font-size:24px"></i>Home</a></li>
+
+            <div class="dropdown">
+            <li><a href="#place"><i class="fa fa-map-marker" style="font-size:24px"></i>Places</a></li>
+            <div class="dropdown-content">
+                <a href="ckm.html">CHIKKAMAGALURU</a><br><br><hr>
+                    <a href="Hassan.html">HASSAN</a><br><br><hr>
+                    <a href="Udupi-Mang.html">UDUPI-MANGLORE</a><br><br><hr>
+                    <a href="Coorg.html">KODAGU</a><br><br><hr>
+                    <a href="Mysuru.html">MYSURU</a><br><br><hr>
+                    <a href="banglore.html">BENGALURU</a><br><br><hr>
+                    <a href="Vijayapura.html">VIJAYAPURA</a><br><br><hr>
+                    <a href="Vijaynagara.html" >VIJAYANAGARA</a><br><br><hr>
+                    <a href="shivamogga.html" >SHIVAMOGA</a><br><br>
+            </div>
+            </div>
+
+            <li><a href="adventure.html"><i class='fa fa-flag' style='font-size:24px'></i>Adventure</a></li>
+            <li><a href="Celebrate.html"><i class="fa fa-star" style="font-size:24px"></i>Celebrate with us</a></li>
+            <li><a href="#footer"><i class="fa fa-phone" style="font-size:24px"></i>Contact us</a></li>
+        </ul>
+        
+    </nav>
+    </header>
+
+    <div class="class1">
+        <div class="class">
+            <h1><center>The best adventures are the ones you never plan for! </center></h1>
+        </div>
+    </div>
+
+
+    <br>
+    <h1><center>Top Best Destinations</center></h1><br>
+
+
+    <div class="places">
+        <div class="box1 box">
+            <h2><center> White Water Rafting</center></h2>
+        <div class="box-img">
+            <div class="card">
+        <img src="https://getupandgo.in/wp-content/uploads/2015/01/White-Water-rafting1.jpg" alt="image" class="cardimg">
+        <div class="cardbody">
+            <div class="carditem">
+                <p>White water rafting is a recreational water sport where an inflatable raft carries 4 to 8 people down white water rapids on a river. White water river rafting is considered an adventure sport and has varying levels of difficulty. Typically, an experienced rafting guide will accompany beginners.</p>
+            </div>
+        </div>
+    </div>
+        </div>
+        <p><b>Location:</b> Dandeli<br>
+           <b>Best time:</b> March to May</p>
+        </div>
+
+        <div class="box2 box">
+            <h2> <center>Parasailing</center></h2>
+            <div class="box-img">
+            <div class="card">
+                <img src="https://www.andamanislands.com/uploads/andamanislands/gallery/main/2983f9b9d64355a058c3cc179a1d3d2a_181.jpg" alt="image" class="cardimg">
+                <div class="cardbody">
+                    <div class="carditem">
+                        <p>Parasailing, also known as parascending or parakiting, is a water sport in which a person is towed behind a boat while attached to a parachute-like canopy. The parasail is suspended from a harness that is attached to the boat, and as the boat moves, the parasailer is lifted into the air and glides through the sky.</p>
+                    </div>
+                </div>
+            </div></div>
+            <p><b>Location:</b> Murudeshwara<br>
+                <b>Best time:</b> December – February</p> 
+        </div>
+
+        <div class="box3 box">
+            <h2><center>Wildlife Safari</center></h2>
+            <div class="box-img" style="background-image: url(Wildlife-Safari1.webp); border-style:ridge; border-color:#DCF2F1;">
+                <div class="card">
+                    <img src="https://static.toiimg.com/photo/msid-104997103,width-96,height-65.cms" alt="image" class="cardimg">
+                    <div class="cardbody">
+                        <div class="carditem">
+                            <p>Wildlife safari is an adventurous journey to observe the wild animals in their natural habitat. As the human species have coexisted and evolved with animals, they have a natural urge to dive into this realm of animals. Besides, wildlife safaris can give a glimpse into the ecosystem and the reminiscence of the earlier lives shared with floras and faunas.</p>
+                        </div>
+                    </div>
+                </div></div>
+            <p><b>Location:</b> Nagarhole National Park<br>
+                <b>Best time:</b> October to February</p> 
+
+        </div>
+    </div>
+
+    <div class="places">
+        <div class="box1 box">
+            <h2><center>Rock Climbing</center></h2>
+        <div class="box-img">
+            <div class="card">
+                <img src="https://static.wixstatic.com/media/39d915_b5175d6d09e14d2f904c55d614d41396~mv2.jpg/v1/fill/w_640,h_534,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/39d915_b5175d6d09e14d2f904c55d614d41396~mv2.jpg" alt="image" class="cardimg">
+                <div class="cardbody">
+                    <div class="carditem">
+                        <p> Rock climbing is a sport in which participants climb up, across, or down natural rock formations or indoor climbing walls. The goal is to reach the summit of a formation or the endpoint of a usually pre-defined route without falling..</p>
+                    </div>
+                </div>
+            </div></div>
+        <p><b>Location:</b> Ramanagara<br>
+          <b> Best time to visit:</b> October to February</p>
+        </div>
+        <div class="box2 box">
+
+            <h2><center> Kayaking</center></h2>
+            <div class="box-img">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/gofjords-com/images/w_2560,h_1707,c_scale/f_auto,q_auto:eco/v1683890721/Experiences/XXLofoten/Kayaking/Evening%20kayaking%202020/Evening-kayaking-Svolvaer-Lofoten-XXlofoten-1/Evening-kayaking-Svolvaer-Lofoten-XXlofoten-1.jpg?_i=AA" alt="image" class="cardimg">
+                    <div class="cardbody">
+                        <div class="carditem">
+                      <p>Kayaking is a popular water sport, and when you see the pros effortlessly weaving between obstacles and cutting smoothly through the water, it's easy to understand why. With the right paddling techniques, you can cover great distances and explore remote parts of rivers and lakes..</p>
+                        </div>
+                    </div>
+                </div></div>
+            <p><b>Location:</b>Banglore-Mysore<br>
+               <b>Best time:</b> August to February</p> 
+        </div>
+        <div class="box3 box">
+            <h2> <center>Trekking</center></h2>
+            <div class="box-img" >
+                <div class="card">
+                <img src="https://completewellbeing.com/wp-content/uploads/2014/04/discover-the-beauty-of-trekking.jpg" alt="image" class="cardimg">
+                <div class="cardbody">
+                    <div class="carditem">
+                        <p>Trekking means to make a long or difficult journey, especially on foot. Hiking is the activity of going for long walks in the country for pleasure. Looking at these definitions, you can see that there is not much to distinguish between the two activities. They both essentially mean long walks..</p>
+                    </div>
+                </div>
+            </div></div>
+            <p><b>Location:</b> Pushpagiri Wildlife Sanctuary<br>
+               <b> Best time:</b> October- February</p> 
+
+        </div>
+     </div>    
+     
+     <div class="places">
+        <div class="box1 box">
+            <h2><center>Camping</center></h2>
+        <div class="box-img">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Tent_camping_along_the_Sulayr_trail_in_La_Taha%2C_Sierra_Nevada_National_Park_%28DSCF5147%29.jpg/1200px-Tent_camping_along_the_Sulayr_trail_in_La_Taha%2C_Sierra_Nevada_National_Park_%28DSCF5147%29.jpg" alt="image" class="cardimg">
+                <div class="cardbody">
+                    <div class="carditem">
+                        <p> Camping is the act of staying and sleeping in an outside area for one or more days and nights, usually in a tent. Camping describes a range of activities and approaches to outdoor accommodation..</p>
+                    </div>
+                </div>
+            </div></div>
+        <p><b>Location:</b>Chikkamagaluru<br>
+           <b> Best time:</b> October to March</p>
+        </div>
+        <div class="box2 box">
+
+            <h2><center>Bungee Jumping</center></h2>
+            <div class="box-img">
+                <div class="card">
+                    <img src="https://www.antaramresort.com/wp-content/uploads/2023/11/1_6q1-rTOP10j1qV9A7ACm_g.jpg" alt="image" class="cardimg">
+                    <div class="cardbody">
+                        <div class="carditem">
+                            <p>Bungee jumping, sport in which the jumper falls from a high place with a rubber (“bungee”) cord attached both to his or her feet and to the jump site, and, after a period of headfirst free fall, is bounced partway back when the cord rebounds from its maximum stretch.</p>
+                        </div>
+                    </div>
+                </div></div>
+            <p><b>Location:</b> Bangalore<br>
+                <b>Best time:</b> Throughout the year</p> 
+        </div>
+        <div class="box3 box">
+            <h2>Coracle Ride In Shivanasamudra Falls</h2>
+            <div class="box-img">
+                <div class="card">
+                    <img src="https://www.india.com/wp-content/uploads/2022/07/coracle-feat.jpg" alt="image" class="cardimg">
+                    <div class="cardbody">
+                        <div class="carditem">
+                            <p>A coracle is a traditional boat that has been used in this region for centuries to ferry people across the river. The modern version uses plastic sheets and bitumen sheets to make them water-proof and sturdier..</p>
+                        </div>
+                    </div>
+                </div></div>
+            <p><b>Location:</b> Mandya district, Karnataka<br>
+                <b>Best time:</b> In the month of June or when summers are there.</p> 
+
+        </div>
+     </div>
+
+ <!-- Start Footer -->
+<footer id="footer" style="background-color: #7FC7D9;">
+    <center><img src="logo2-Photoroom.png-Photoroom.png" alt="Namma Nadu"></center>
+    <ul>
+        <li><a href="https://www.instagram.com/karnatakaworld/"><i class="fa fa-instagram" style="font-size:24px"></i></a></li>
+        <li><a href="https://www.facebook.com/KarnatakaWorld/"><i class="fa fa-facebook" style="font-size:24px"></i></a></li>
+        <li><a href="https://twitter.com/karnatakaworld?lang=en"><i class="fa fa-twitter" style="font-size:24px"></i></a></li>
+        <li><a href="www.youtube.com/@karnatakatourism7698"><i class="fa fa-youtube" style="font-size:24px"></i></a></li>
+        <li><a href="#"><i class="fa fa-phone" style="font-size:24px"></i></a></li>
+    </ul>
+  
+    <ul class="footer2">
+        <li><a href="#home">Home<a></li>
+        <li><a href="#">Term & Conditions<a></li>
+        <li><a href="#">Privacy Policy<a></li>
+        <li><a href="#">Contact us<a></li>
+        <li><a href="#">FAQs<a></li>
+    </ul>
+  
+  </footer>
+  <!-- End Footer -->
+
+        
+</body>
+</html>

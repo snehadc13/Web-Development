@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namma Nadu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+<header id="home">
+    <nav class="nav">
+        <ul>
+                <img src="logo2-Photoroom.png-Photoroom.png" alt="logo" width="150px" height="100px">
+                <li><a href="#home"><i class="fa fa-home" style="font-size:24px"></i>Home</a></li>
+
+                <div class="dropdown">
+                <li><a href="#place"><i class="fa fa-map-marker" style="font-size:24px"></i>Places</a></li>
+                <div class="dropdown-content">
+                    <a href="ckm.html" target="_blank">CHIKKAMAGALURU</a><br><br><hr>
+                    <a href="Hassan.html" target="_blank">HASSAN</a><br><br><hr>
+                    <a href="Udupi-Mang.html" target="_blank">UDUPI-MANGLORE</a><br><br><hr>
+                    <a href="Coorg.html" target="_blank">KODAGU</a><br><br><hr>
+                    <a href="Mysuru.html" target="_blank">MYSURU</a><br><br><hr>
+                    <a href="banglore.html" target="_blank">BENGALURU</a><br><br><hr>
+                    <a href="Vijayapura.html" target="_blank">VIJAYAPURA</a><br><br><hr>
+                    <a href="Vijaynagara.html" target="_blank">VIJAYANAGARA</a><br><br><hr>
+                    <a href="shivamogga.html" target="_blank">SHIVAMOGA</a><br><br>
+                </div></div>
+
+                <li><a href="adventure.html" target="_blank"><i class='fa fa-flag-o' style='font-size:24px'></i>Adventure</a></li>
+                <li><a href="#food"><i class="fa fa-spoon" style="font-size:24px"></i>Food</a></li>
+                <li><a href="#about"><i class="fa fa-user" style="font-size:24px"></i>About us</a></li>
+                <li><a href="#blog"><i class="fa fa-comments-o" style="font-size:24px"></i>Fedback</a></li>
+                <li><a href="#footer"><i class="fa fa-phone" style="font-size:24px"></i>Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- SLideShow -->
+    <div class="slideshow-container">
+        <div class="slides fade">
+            <img src="slide1.jpg" alt="slide1" class="slideimg">
+        </div>
+        <div class="slides fade">
+            <img src="slide2.jpg" alt="slide2" class="slideimg">
+        </div>
+        <div class="slides fade">
+            <img src="slide3.jpg" alt="slide3" class="slideimg">
+        </div>
+        <div class="slides fade">
+            <img src="slide4.jpg" alt="slide4" class="slideimg">
+        </div>
+        <div class="slides fade">
+            <img src="slide5.jpg" alt="slide5" class="slideimg">
+        </div>
+        <div class="slides fade">
+            <img src="slide6.jpg" alt="slide6" class="slideimg">
+        </div>
+        <div class="cardbody-slide">
+            <div class="carditem">
+                <p class="kar">Welcome to Karnataka</p>
+                <h2>ನಮ್ಮ ನಾಡು ನಮ್ಮ ಹೆಮ್ಮ</h2>
+            </div>
+        </div>
+    </div>
+    <!-- About us -->
+    <div class="about" id="about">
+        <center><h2>About Us</h2></center>
+            <div class="abouttext">
+                <h4 style="font-size: 30px; color: rgb(116, 6, 6);"><b>Welcome To Our Website</b></h4>
+                <p><b>Discover the best by travelling across the world and don't forgot to visit Karnataka,<i>the land of sandalwood</i>. <br>We are here to guide to explore Karnataka and give you the best experience ever!!</b></p>
+            </div>
+            <div class="aboutimg">
+                <img src="https://www.21kschool.com/in/wp-content/uploads/sites/4/2022/08/3-Ways-to-Make-your-Family-Vacation-Worthwhile.png" alt="">
+            </div>
+        </div>
+
+    <!-- Work Quote -->
+    <div class="work">
+        <img src="work-Photoroom.png-Photoroom.png" alt="work-travel-save-repeat">
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis doloremque tempore ipsa rerum, eveniet ex consequatur commodi aliquid cupiditate praesentium esse dolorem natus vel quam animi! Iure illo pariatur totam.</p> -->
+        <div class="work-icon">
+        <ul>
+            <li><a href="Celebrate.html" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG-6IVqPO_6rRufQEw6KWYA6ko9Cg5STnymA&s" alt=""></a></li>
+            <h4><span>Celebrate</span><br>with us</h4>
+            <li><a href="#" id="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAflBMVEX///8AAADY2Nivr68EBAT5+fmdnZ319fWoqKgTExPw8PD4+PgICAgdHR0YGBjs7OzS0tLm5uYoKCgwMDDe3t4QEBBTU1NoaGjCwsJfX186OjqEhIR7e3uYmJhJSUkhISG5ublycnJFRUXIyMiOjo43NzeCgoJPT09jY2NZWVmPc5aPAAAGtklEQVR4nO2caXeyOhCARUVREUXApWoFl7b+/z94tc1kT1BJeD33zPOlLRCYIZklk9BOB0EQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEH+X4zz2dNtwjQfexDlVcbRbpnFQRDEH1WUP9YmXe+rz0Nwb7RY7qJ3UKe83nVgHE/1bU7fgUj/O5r4F9VGbxEoXFN7m9On2iYIknPYjsg6Uq1Iwai0tJlttG1uLNZtyS1Tjgwi9SNjm7WpzZ3q34yvL7NE/dLQJupb9AiC7EFf4ZLJ1SZRoZeoZ9fj1q5sV4tOZ3i0S/Sha3SK7Y0C66j0QijrMV2ey/P1wA7s1Uazaa0eN9rVRHI9MYgdFXAoGdY1MvVJm85rLz4769Iz+QccHMiN5g/pcXsFz+c6r5KLYz3hM4whDC/FSnTeoT/SmM13a4pIBiKO6hIOSwF+Jnms0ecuuvdk3tteF+I5pTM9EYEofz8+pdPw5iWrHQiyTvdCRpIK3VXUJDmOGBLnkxFFetJ56JJKPLzkRV0prqDkXdrGo/iMLXnamfyUY99YP9R5QTW+uTPmNX0ghW7MmHjYDVGoUK4g5i5a+5ATs1Ka/LJlV2jjqWPI4/o5GdYX5QqSE2fCwZxJuTAl7JwZ+Q8mYfL3pJ8OiRgj5ZKDTsMuE9LslM70GtmDuAdc1ryT1djIUTjKKWJJcZmddM0XuYHEkEUHekTxWusA+oyHDS3VqBizBK7aOZdcehIJXV8sXiylS37I8bNwdEIVsRoydHgwdS25BNhjlxvQYpdAh9wGnwB1v/YgQbMGzx6YDOK7R6JJ4JSPbiGUIw5SSzq/v1ofcGppbJFovr3/TisoH8x8U/pGt1JLGiVqYgQorLp1l0Av/PoU5iwLyKtYPaKQi260A23G3mEZTt9r1Y5MROLfPybchHDxsz8NVhk7cFba0qvnyikBMKbSvfiMDTORDpexqxzVtnRs1Yz+ilz25V58BnnlYK/GitBBM8ubwRwqsZevwO15nV8RWaghr/R6JNrgvTMPO56QPGThWHYeCM8sclSKEncR9EkITGSC2F6HI46v71R0Eeh1zlx7So2nX6kFlD+oTV2sgwtejsd5IiQQ/BsdnhNBjY0l3aMjUU5rBCB78BjboQwkmvIkWpHYON0MrK8xpMUiW3iHfi+bC2wCPKg6dib5qezWh7AZzQY+zRdDxu+x5gh+5/U7pFSThTEupuQKj1Uhokjc4BYzOrpikxeetaZITbZkJ2Sx56I35/YUadIjN3osR9vofEPuXxFISRquW062tOIbV2oyA3myR2OHxL1xqErZEkOxlX0gxM2y6VPMQKjSVp3y3jPsWBk+EevANFp5DIjwrnQlT6lK/RRHoVMqctTjyiiM3pVjRcQbgoM2pWwOgNpbpjvZRBE+ZYc0PvGnB609BLrVsSaK8HVXSLW8FrKh13Uuvoki/GwQ8qAfzTOcsdI82IUivBuEbMw+j2wICNvXjK3XFcn40EcrdF5XFmhNXfO6xt0XEcMrdHrfo9PqMGuXC6LOGEOg9FtpZIvlvhIhWr70XPulhqANJc0Z0gKA58U3mL356hJajix87wykE7ypD2NMaSppX3xwACvBaxOuhnx67nCOlG0bkRcPm8N2HRV+ne8dtme3cL3yemIvqYVNHD0WkQ9ui5o5V7JsYfdZyBV7M5d7xGbcZmiflXgKM3enmoy55S79FNQ1Q34PsmEF4XlmvB41S0Gu4LskSNyUCFJhk30rHcItpf8Su/D4c2GVxbh9yDXSIqhh+9UT9ArhhmXjGz6KtIP30iygDKWVSOsqkFvG0npbvGsQiCPpZqN2tmb+sZZ36yfnF1VZf0h3anlP+VZ+fDDavfAmS/VbgXZ2mDI0+6r7372n3M1kkKk3yfxniyLDiyrErVtWDydJ3Ur3cY/zRLSe2UEjx41p9UiwLxXT+OvU0rfYGvJEK8tNmsV1WxoNJpxH1dH0pVVLIV2ia/vwK4gPl+/Vbh+t/1atw3wdnavlZWr7Osn3jkwTc6smXBcVRf1HSYHnaq8TTR6jbcfLk2u+DH2V5ilbE4RvDJoQt/X1i5FBUS9lPVnNRsc2SJt3Sn/3jz+eJpSaVOMZPt6gOwgDQ5h/hGnLH4PaCfcvqjI6v8eoYoTRCwNstH2H/5KgsF7WfR0tMn11NuafdPtwhHx29tI6+X5ZH1mSzVv8541auoPVxZgmTjf793G3DxCm8zLaf1XXY3aIf5P6H5bUIwiCIAiCIAiCIAiCIAiCIAiCIAiCIAjyj/kPlMhMTzPplngAAAAASUVORK5CYII=" alt=""></a></li>
+            <h4><span>Kannada</span><br>Basic Phrases</h4>
+            <li><a href="#things"><img src="https://cdn-icons-png.flaticon.com/512/7695/7695937.png" alt=" Things" style="background-color: white;"></a></li>
+            <h4><span>Things</span><br>Purchase if you like</h4>
+        </ul>
+        </div>
+        <br>
+    </div>
+    <div class="popup">
+        <div class="popup-content"> 
+            <a href="#" class="close"><i class="fa fa-close" style="font-size:24px"></i></a>
+            <h3 style="font-size: 25px;"><center>Basic Kannada Phrases</center></h3><br>
+            <div class="popup-ul">
+                <div>
+                <ul>
+                    <li><h4>Yes/agreement</h4></li>
+                    <li><h4>No </h4></li>
+                    <li><h4>Hello </h4></li>
+                    <li><h4>Are you good?</h4></li>
+                    <li><h4>I am fine </h4></li>
+                    <li><h4>What is your name? </h4></li>
+                    <li><h4>Have you taken breakfast? </h4></li>
+                    <li><h4>How much? </h4></li>
+                    <li><h4>What?<h4></li>
+                    <li><h4>Thank you</h4></li>
+                    <li><h4>Is there a hotel/restaurant nearby? </h4></li>
+                    <li><h4>I don't want </h4></li>
+                    <li><h4>I want </h4></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
+
+                <div>
+                <ul>
+                    <li><h4>: Hu (hnnn)</h4></li>
+                    <li><h4>: Ila (ee-la)</h4></li>
+                    <li><h4>: Namaste (Nam-uhh-steh) and Namaskara (nam-uhh-skaa-ra)</h4></li>
+                    <li><h4>: Chennagidhiya? (Chen-aug-ee-dee-ya)</h4></li>
+                    <li><h4>:  Nanu chenagiddene (Che-aug-ee-de-ne)</h4></li>
+                    <li><h4>: Nimma hesarēnu? (ni-ma hey-sar-yenu) (Nimma(your) hesaru(name) enu(what))</h4></li>
+                    <li><h4>: Tindi ayitha (tin-di aa-yi-tha)</h4></li>
+                    <li><h4>: Estu? (yesh-tu)</h4></li>
+                    <li><h4>: Enu? (yenu)</h4></li>
+                    <li><h4>: Dhanyavadagalu (Dhaan-ya-vad-a-ga-loo)</h4></li>
+                    <li><h4>: Hotel idheya? (Hotel id-hey-ya?)</h4></li>
+                    <li><h4>: Beda</h4></li>
+                    <li><h4>: Beku (Be-Ku)</h4></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- places -->
+    <div class="place" id="place">
+        <center><h2><Span style="color: rgb(119, 2, 2);">P</Span>laces to <Span style="color: rgb(119, 2, 2);">E</Span>xplore</h2></center>
+        <div class="slide-wrapper">
+            <button id="prev-slide" class="slidebutton"><i class="fa fa-angle-left"></i></button>
+            <div class="img-list">
+
+            <a href="ckm.html" target="_blank">
+                <div class="card">
+                    <img src="https://trekkerpedia.com/wp-content/uploads/2014/09/Mullayanagiri-trek-from-Sarpadhari-to-Bababudanagiri-7.jpg" alt="img" class="image-item">
+                        <div class="cardbody1">
+                            <div class="carditem">
+                                <p><b><br>CHIKKAMAGALURU <br></b><br>Chikmagalur is famous for its serene environment, lush green forests and tall mountains. It is also famous for the coffee and is often referred to as the coffee land of Karnataka.</p>
+                            </div>
+                        </div>
+                </div>
+            </a>            
+            <a href="Coorg.html" target="_blank">
+                <div class="card">
+                    <img src="kodagu.jpg" alt="img" class="image-item">
+                        <div class="cardbody2">
+                            <div class="carditem">
+                                <p><b><br>KODAGU <br></b><br>Kodagu is a hilly district of Karnataka popularly called as Coorg.Abbey Falls, Omkareshwar Temple, Madikeri Fort, Raja Seat, Dubare Elephant Camp, Chiklihole Dam, Golden Temple (Tibet camp) and many more. </p>
+                            </div>
+                        </div>
+                </div>
+            </a>
+            <a href="banglore.html">
+                <div class="card">
+                    <img src="bang.jpg" alt="img" class="image-item">
+                        <div class="cardbody3">
+                            <div class="carditem">
+                                <p><b><br>Bengaluru <br></b><br>Some popular tourist places to visit in Bangalore are Cubbon Park, Nandi Hills, Tipu Sultan's Palace, Lal Bagh Botanical Garden, Bangalore Palace, ISKCON Temple, and the National Gallery of Modern Art.</p>
+                            </div>
+                        </div>
+                </div>
+            </a>
+
+            <a href="Hassan.html" target="_blank">
+                <div class="card">
+                    <img src="https://static2.tripoto.com/media/filter/tst/img/830945/Image/1692532533_161784515_878735976242814_157018241085060367_n.jpg.webp" alt="img" class="image-item">
+                    <div class="cardbody4">
+                        <div class="carditem">
+                            <p><b><br>Hasaan <br></b><br>Although not a proper hill station, Hassan is often referred to as “Poor Man's Ooty”. Hassan is also associated with the Hoysala Empire who had their capital at Belur and Dwarasamudra (present-day Halebeedu).</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="Mysuru.html" target="_blank">
+                <div class="card">
+                    <img src="chamundi.jpg" alt="img" class="image-item">
+                        <div class="cardbody5">
+                            <div class="carditem">
+                                <p><b><br>Mysuru<br></b><br>Popularly known as the ‘Cultural capital of Karnataka’, Mysore is a place that beautifully blends splendour of history with the living vibrancy of the traditions and culture which is reflected in the lives of its residents.</p>
+                            </div>
+                        </div>
+                </div>
+            </a>
+
+            <a href="Vijayapura.html">
+                <div class="card">
+                    <img src="golgumbaz.jpg" alt="img" class="image-item">
+                        <div class="cardbody6">
+                            <div class="carditem">
+                                <p><b><br>Vijayapura<br></b><br>Royal Tombs: Vijayapura has several royal resting places such as Afzal Khan's wives tombs, Afzal Khan's Cenotaph, Ain Ul Mulk's Tomb and mosque, Ali Adil Shah 1st's tomb, Ali Adil Shah 2nd 's tomb and Ali Shahi Pir's tomb and mosque.</p>
+                            </div>
+                        </div>
+                </div>
+            </a>
+
+            <a href="shivamogga.html" target="_blank">
+                <div class="card">
+                    <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2018/04/jog-falls-shutterstock_549569029.jpg" alt="img" class="image-item">
+                        <div class="cardbody7">
+                            <div class="carditem">
+                                <p><b><br>Shivamogga<br></b><br>Shimoga, officially Shivamogga, is a city lies on the banks of the Tunga River. Being the gateway for the hilly region of the Western Ghats, the city is popularly nicknamed the "Gateway of Malnad". The most loved tourist places to explore in Shimoga are Shiva Temple-shimoga, Kavledurga and Achakanya Falls.</p>
+                            </div>
+                        </div>
+                </div>
+            </a>
+
+            <a href="Vijaynagara.html" target="_blank">
+                <div class="card">
+                    <img src="https://c.ndtvimg.com/gws/732/assets/9.jpeg?1596431779" alt="img" class="image-item">
+                        <div class="cardbody8">
+                            <div class="carditem">
+                                <p><b><br>Vijaynagara<br></b><br>Vijayanagara empire is known as the 'City of victory'. It is the home of the former capital of the famous Vijayanagara Empire and it's capital Hampi, which is now one of the UNESCO World Heritage Sites.</p>
+                            </div>
+                        </div>
+                </div>
+            </a>
+
+            <a href="Udupi-Mang.html" target="_blank">
+                <div class="card">
+                    <img src="https://pbs.twimg.com/media/F8PE09zbkAA7Kua.jpg:large" alt="img" class="image-item">
+                        <div class="cardbody9">
+                            <div class="carditem">
+                                <p><b><br>Udupi<br></b><br>Udupi district is located in the coastal region of Western Ghats about 60 km from Mangalore. Udupi is a popular pilgrimage centre and tourist spot. Udupi is famous for the Lord Krishna temple located here. Udupi is also world famous for its world class cuisine</p>
+                            </div>
+                        </div>
+                </div>
+            </a>
+
+            <a href="Udupi-Mang.html">
+                <div class="card">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-c/1280x250/0c/72/89/46/photo4jpg.jpg" alt="img" class="image-item">
+                        <div class="cardbody10">
+                            <div class="carditem">
+                                <p><b><br>Mangaluru<br></b><br>Beautiful beaches: Mangalore and its pristine beaches are well-known among travellers. The golden sands and clear blue waters of Someshwar Beach, Panambur Beach, Tannirbavi Beach, and Surathkal Beach will scratch that itch you have for a beach holiday</p>
+                            </div>
+                        </div>
+                </div>    
+            </a>
+            </div>
+            <button id="next-slide" class="slidebutton"><i class="fa fa-angle-right"></i></button>
+            </div>
+            <marquee behavior="scroll" direction=""><i class="fa fa-star"></i>Infinite possibilities are waiting for you, you just need to explore them.</marquee>
+        </div>
+
+    <!-- food Quote -->
+        <div class="work">
+            <h2><span style="color: rgb(138, 7, 7);">T</span>ravel and <span style="color: rgb(119, 2, 2);">E</span>at like a <Span style="color: rgb(119, 2, 2);">L</Span>ocal</h2>
+            <p><i class="fa fa-cutlery" style="font-size:30px"></i>You learn a lot about someone when you share a meal together. And you learn a lot about place when you taste local foods.<i class="fa fa-cutlery" style="font-size:30px"></i></i></p>
+        <br>
+        </div>
+    
+
+    <!-- food -->
+    <div class="food" id="food">
+        <center><h2><Span style="color: rgb(119, 2, 2);">F</Span>ood <Span style="color: rgb(119, 2, 2);">y</Span>ou <Span style="color: rgb(119, 2, 2);">m</Span>ust <Span style="color: rgb(119, 2, 2);">T</Span>ry</h2></center>
+    <div class="foodcard">
+        <div class="maincard">
+            <div class="flipcard">
+                <div class="front">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR45SEH0M-fODG21ip2k-4qs3cAHMOcipraOQ&s" alt="">
+                </div>
+                <div class="back"><h3>Mysore Pak</h3><p>Madappa made a concoction of gram flour, ghee and sugar. When asked its name, Madappa had nothing in mind, simply called it the Mysuru paka.</p></div>
+            </div>
+        </div>
+        <div class="maincard">
+            <div class="flipcard">
+                <div class="front">
+                    <img src="Dharwad_peda.jpg" alt="">
+                </div>
+                <div class="back"><h3>Dharwad Peda</h3><p>Milk and sugar are the main ingredients of Dharwad Pedha. The milk used in Dharwad Pedha is procured from the local areas of Dharwad helping in its unique taste. <p></div>
+            </div>
+        </div>
+        <div class="maincard">
+            <div class="flipcard">
+                <div class="front">
+                    <img src="belgum_kunda.jpg" alt="">
+                </div>
+                <div class="back"><h3>Belgaum Kunda</h3><p>Belgaum Kunda or Belagavi Kunda is a North Karnataka dish made by reducing and curdling the milk and cooking with caramalised sugar. <p></div>
+            </div>
+        </div>
+        <div class="maincard">
+            <div class="flipcard">
+                <div class="front">
+                    <img src="maddurvade.jpg" alt="">
+                </div>
+                <div class="back"><h3>Maddur Vade</h3><p>Maddur Vada is a popular snack (crispy fried patties) from Karnataka, originating in Madduru, a town 85 kms south west of Bengaluru..</p></div>
+            </div>
+        </div>
+        <div class="maincard">
+            <div class="flipcard">
+                <div class="front">
+                    <img src="https://imgmedia.lbb.in/media/2018/12/5c24e55ba994a416b828cd15_1545921883832.jpg" alt="">
+                </div>
+                <div class="back"><h3>Haalbai</h3><p>Halbai is a sweet unique to the cities of Bangalore and Mysore. Made with four simple ingredients, it is healthy and a quick to cook recipe. <p></div>
+            </div>
+        </div>
+        <div class="maincard">
+            <div class="flipcard">
+                <div class="front">
+                    <img src="https://farm9.staticflickr.com/8754/16705003119_7c1a6f81f8.jpg" alt="">
+                </div>
+                <div class="back"><h3>Full meals</h3><p> A full course dinner is a meal featuring multiple courses. They begin with precursors to a main dish, such as an amuse-bouche, followed by the main course(s), and conclude with sweets.<p></div>
+            </div>
+        </div>
+        <div class="maincard">
+            <div class="flipcard">
+                <div class="front">
+                    <img src="ragimudde.jpg" alt="">
+                </div>
+                <div class="back"><h3>Ragi Mudde</h3><p>Ragi mudde has only two ingredients, ragi flour and water. A bowl of ragi flour is first mixed with water to make a thin paste and later added to a thick-bottomed vessel containing water on a stove top. <p></div>
+            </div>
+        </div>
+        <div class="maincard">
+            <div class="flipcard">
+                <div class="front">
+                    <img src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20190128191330/Bisi-Bele-bath.jpg" alt="">
+                </div>
+                <div class="back"><h3>Bisibelebath</h3><p>According to historian KT Achaya, Bisi Bele Bath is probably a variation of a dish called Kattogara from 10th Century, which was made with rice, ghee, salt and garlic.p></div>
+            </div>
+        </div>
+    </div></div>
+
+
+    <!-- food Quote -->
+    <div class="work">
+        <h2><Span style="color: rgb(119, 2, 2);">S</Span>hop in <Span style="color: rgb(119, 2, 2);">L</Span>ocal</h2>
+        <p><i class="fa fa-shopping-bag" style="font-size:24px"></i>Shopping in local stores gives you best experience than shopping in malls<i class="fa fa-shopping-bag" style="font-size:24px"></i><p>
+    <br>
+    </div>
+
+
+<!-- Things -->
+    <div class="things" id="things">
+        <center><h2><Span style="color: rgb(119, 2, 2);">T</Span>hings to <Span style="color: rgb(119, 2, 2);">P</Span>urchase</h2></center>
+    <div class="thingcard">
+
+        <div class="card-thing">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnEYL6cqvzaezXTdnXrp1AV_vuJZN7pV2VCJmE9VolKg&s" alt="image" class="cardimg-thing">
+            <div class="cardbody">
+                <div class="carditem-thing">
+                    <h3>Mysore Silk Saree</h3>
+                    <p>If you love drapping saree then you must buy this.<br><br>Place to buy : Mysuru(it is also available all over Karnataka).</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card-thing">
+            <img src="https://cdn.shopify.com/s/files/1/0155/8131/products/MG_5390_c812d914-18db-4081-8d6d-f2b45dad3731_1200x.jpg" alt="image" class="cardimg-thing">
+            <div class="cardbody">
+                <div class="carditem-thing">
+                    <h3>Chennapatna Wodden Toys</h3>
+                    <p>IF your buying something as a memory then you must buy these colorful handmade wooden toys. You can also customize according to your preferences. <br><br>Place to buy: Chennapatna(Ramnagara district).</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card-thing">
+            <img src="https://tarunaturalslite.myshopify.com/cdn/shop/products/top-view-coffee-powder-strainer-coffee-beans_23-2148453615.jpg?v=1611484682" alt="image" class="cardimg-thing">
+            <div class="cardbody">
+                <div class="carditem-thing">
+                    <h3>Coffee Powder</h3>
+                    <p>If your a coffe lover then you must not miss buying Coffe powder. <br><br>Place to buy: Chikkamagaluru and Kodagu</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card-thing">
+            <img src="https://static.toiimg.com//photo/104164696/104164696.jpg?imgsize=40838" alt="image" class="cardimg-thing">
+            <div class="cardbody">
+                <div class="carditem-thing">
+                    <h3>Sandalwood Things</h3>
+                    <p>Visiting the land of Sandalwood and not taking back sandalwood things should not happen. Therefore we suggest not miss out things made of sandalwood. <br><br>Place to buy: All over Karnataka</p>
+                    </div>
+            </div>
+        </div>
+
+
+        <div class="card-thing">
+            <img src="https://coorgflavours.com/wp-content/uploads/2023/09/images.jpg" alt="image" class="cardimg-thing">
+            <div class="cardbody">
+                <div class="carditem-thing">
+                    <h3>Homemade Chocolate</h3>
+                    <p>If you have a sweet tooth you must try these homemade chocolates. <br><br>Place to buy: Coorg(Kodagu).</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card-thing">
+            <img src="https://gaatha.org/wp-content/uploads/lumbani-embriodery-products.jpg" alt="image" class="cardimg-thing">
+            <div class="cardbody">
+                <div class="carditem-thing">
+                    <h3>Lambani Ornaments</h3>
+                    <p>These are the beautiful accessories made in lambani style. You can have varities of accessories, bags, home decoretives many more.<br><br>Place to buy: Hampi, Vijayanagara.</p>
+                    </div>
+            </div>
+        </div>
+    </div></div>
+
+    <!-- Blog -->
+    <div class="blog" id="blog">
+        <center><h2><Span style="color: rgb(119, 2, 2);">Y</Span>our <Span style="color: rgb(119, 2, 2);">E</Span>xperience</h2></center>
+        <div class="experience">
+        <img src="https://cdn-icons-png.flaticon.com/512/4766/4766795.png" alt="">
+        <div class="blogin">
+        <form id="myForm">
+            <label for="name">Name:</label>
+                <input type="text" name="name" id="b2"><br><br>
+            <label for="from">From:</label>
+                <input type="text" name="from" id="b1"><br><br>
+            <label for="msg">Review:</label>
+                <input type="text" name="msg" id="b"><br><br>
+        </form>
+        <button onclick='SubForm()'>Submit</button>
+        </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- Start Footer -->
+    <footer id="footer">
+        <center><img src="logo2-Photoroom.png-Photoroom.png" alt="Namma Nadu"></center>
+        <ul>
+            <li><a href="https://www.instagram.com/karnatakaworld/" target="_blank"><i class="fa fa-instagram" style="font-size:24px"></i></a></li>
+        <li><a href="https://www.facebook.com/KarnatakaWorld/" target="_blank"><i class="fa fa-facebook" style="font-size:24px"></i></a></li>
+        <li><a href="https://twitter.com/karnatakaworld?lang=en"  target="_blank"><i class="fa fa-twitter" style="font-size:24px"></i></a></li>
+        <li><a href="www.youtube.com/@karnatakatourism7698" target="_blank"><i class="fa fa-youtube" style="font-size:24px"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-phone" style="font-size:24px"></i></a></li>
+        </ul>
+
+        <ul class="footer2">
+            <li><a href="#">Home<a></li>
+            <li><a href="#">Term & Conditions<a></li>
+            <li><a href="#">Privacy Policy<a></li>
+            <li><a href="#">Contact us<a></li>
+            <li><a href="#">FAQs<a></li>
+        </ul>
+
+    </footer>
+  <!-- End Footer -->
+    <script src="script.js"></script>
+</body>
+</html>

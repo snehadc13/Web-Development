@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival</title>
+    <link rel="stylesheet" href="celeb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: #7FC7D9;
+    padding-top: 45px; 
+}
+/* :target{
+    scroll-margin-top: 200px;
+} */
+html,body{
+    margin: 0%;
+    background-color: #7FC7D9;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    position: relative;
+}
+.nav{
+    padding-top: 10px;
+    position: relative;
+}
+.nav ul li a{
+    color: #000000;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    color: rgb(219, 15, 141);
+}
+
+.nav ul li{
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.nav ul li a i{
+    padding-left: 10px;
+    padding-right:10px;
+}
+.nav ul img{
+    margin-left: -650px;
+    margin-right: 150px;
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
+
+/* Dropdown menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown a{
+    text-decoration: none;
+    color: #060f31;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(211, 234, 253);
+    min-width: 100px;
+    box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 5px;
+    top: 50px;
+    padding-top: 15px;
+    border: #060f31;
+    border-width: 1px;
+    border-style: solid;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown .dropdown-content a:hover{
+    color: #f800c2e1;
+    cursor: pointer;
+  }
+
+li{
+    list-style-type: none;
+    margin-right: 15px;
+
+}
+ul{
+    display:flex;
+    margin-left: 720px;
+    
+}
+.class h1{
+    font-style: italic;
+}
+
+
+
+.quote h1{
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-family: cursive;
+    text-shadow: #b0afc4 2px 2px;
+}
+
+.class1{
+    background-image: url(Festivals-of-Karnataka.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+.class2 h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.places{
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+}
+.box{
+
+    height:300px;
+    width:200px;
+    padding: 20px 0px 15px;
+}
+.box h2{
+    font-size: 22px;
+}
+
+.box-img img{
+    height:300px;
+    width:250px;
+    margin-bottom: 200px;
+}
+.box-img{
+    height:300px;
+    width:300px;
+    margin-left: -30px;
+}
+.box3  .box-img{
+    border-style: none;
+}
+    
+.footer-class h1{
+    background-color: rgb(211, 234, 253);
+    height: 100px;
+    color: black;
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 20px;
+}
+body{
+    background-color: #DCF2F1;
+}
+
+.box-img:hover{
+    margin-top: 45px;
+    transform: scale(1.3);
+}
+
+.places h2{
+    color: #060f31;
+    text-shadow: #b9b8c6 2px 2px;
+}
+
+footer img{
+    width: 150px;
+    height: 100px;
+    color: #000;
+    opacity: 1;
+}
+footer ul{
+    margin-left: 33%;
+}
+footer ul li a{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+footer ul li a i{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    padding-left: 7px;
+    padding-top: 5px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+footer ul li a i:hover{
+    background-color: rgb(93, 60, 255);
+    color: #000000;
+}
+.footer2{
+    margin-left: 25%;
+}
+.footer2 li a{
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+</style>
+ </head>
+ 
+<body>
+    <header>
+    <nav class="nav">
+        <ul>
+            <img src="logo2-Photoroom.png-Photoroom.png" alt="logo" width="150px" height="100px">
+            <li><a href="index.html"><i class="fa fa-home" style="font-size:24px"></i>Home</a></li>
+
+            <div class="dropdown">
+                <li><a href="#place"><i class="fa fa-map-marker" style="font-size:24px"></i>Places</a></li>
+                <div class="dropdown-content">
+                    <a href="ckm.html">CHIKKAMAGALURU</a><br><br><hr>
+                    <a href="Hassan.html">HASSAN</a><br><br><hr>
+                    <a href="Udupi-Mang.html">UDUPI-MANGLORE</a><br><br><hr>
+                    <a href="Coorg.html">KODAGU</a><br><br><hr>
+                    <a href="Mysuru.html">MYSURU</a><br><br><hr>
+                    <a href="banglore.html">BENGALURU</a><br><br><hr>
+                    <a href="Vijayapura.html">VIJAYAPURA</a><br><br><hr>
+                    <a href="Vijaynagara.html" >VIJAYANAGARA</a><br><br><hr>
+                    <a href="shivamogga.html" >SHIVAMOGA</a><br><br>
+                </div>
+                </div>
+
+                <li><a href="adventure.html"><i class='fa fa-flag' style='font-size:24px'></i>Adventure</a></li>
+                <li><a href="Celebrate.html"><i class="fa fa-star" style="font-size:24px"></i>Celebrate with us</a></li>
+                <li><a href="#footer"><i class="fa fa-phone" style="font-size:24px"></i>Contact us</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <div class="class1" >
+        <div class="quote">
+            <h1><center>Life is a festival, celebrate it with joy and enthusiasm! </center></h1>
+        </div>
+    </div>
+    <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif; color: rgb(130, 23, 23);"><center>Festivals of Karnataka</center></h1><br>
+
+    <div class="places">
+
+        <div class="box1 box">
+            <h2><center>Ganesha Chaturthi </center></h2>            
+            <div class="box-img">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Lalbaugh_Ganesha.jpg/1200px-Lalbaugh_Ganesha.jpg" alt="pic1"></div>
+                <p><b style="color: rgb(128, 7, 7);">When is it celebrated:</b> August or September<br>
+                <b style="color: rgb(128, 7, 7);">Location:</b> All across Karnataka and other parts of India</p>
+        </div>
+
+        <div class="box2 box">
+             <h2> <center>Mysore Dasara</center></h2>
+            <div class="box-img">
+                <img src="https://i.pinimg.com/736x/14/1b/5a/141b5a006dabff85c457df4ab9f66d38.jpg" alt="pic"></div>
+            <p><b style="color: rgb(128, 7, 7);">When is it celebrated:</b> 10th day of the month of Ashvin.<br>
+                <b style="color: rgb(128, 7, 7);">Location:</b>Mysore, Karnataka. </p> 
+        </div>
+
+        <div class="box3 box">
+            <h2><center>Ugadi</center></h2>
+            <div class="box-img"><img src="https://www.karnataka.com/wp-content/uploads/2007/07/Ugadi_Pacchadi.jpg" alt="pic"></div>
+            <p><b style="color: rgb(128, 7, 7);">When is it celebrated:</b> March or April<br>
+                <b style="color: rgb(128, 7, 7);">Location:</b> Karnataka, Telangana and Andhra Pradesh.</p> 
+
+        </div>
+    </div>
+
+    <div class="places">
+        <div class="box1 box">
+            <h2><center>Hampi Festival</center></h2>
+        <div class="box-img"><img src="https://hospet.online/wp-content/uploads/2024/01/Hampi-Utsav-2024-events-list-and-invitation-released.jpeg.jpg" alt="pic"></div>
+        <p><b style="color: rgb(128, 7, 7);">When is it celebrated:</b> January.<br>
+          <b style="color: rgb(128, 7, 7);"> Location:</b> Hampi, Karnataka</p>
+        </div>
+        <div class="box2 box">
+
+            <h2><center>  Sri Vithappa Fair</center></h2>
+            <div class="box-img"><img src="https://karnatakatourism.org/wp-content/uploads/2020/06/DOLLU-KUNITHA1.jpg" alt="pic"></div>
+            <p><b style="color: rgb(128, 7, 7);">When is it celebrated:</b>The fourteen and fifteen day of the Ashwija month.<br>
+               <b style="color: rgb(128, 7, 7);">Location:</b>Vithappa Village, Karnataka.</p> 
+        </div>
+        <div class="box3 box">
+            <h2> <center>Makar Sankranti</center></h2>
+            <div class="box-img"><img src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_schimEULQcLo8TWed8O-g26Hn65389vqRoARdkXTYGgSjuZthdIZ3ENEpfUbcSKrR0VxitV6qIDbpf1JgY5Z4L7J_p204JR_WXbXxNBUb9UxnnbS23QWQSe3ksYTjrIPm7=w1200-h630-p-k-no-nu" alt="pic"></div>
+            <p><b style="color: rgb(128, 7, 7);">When is it celebrated:</b> 14th or 15th of January.<br>
+               <b style="color: rgb(128, 7, 7);"> Location:</b> All across Karnataka.</p> 
+
+        </div>
+     </div>    
+     
+     <div class="places">
+
+        <div class="box1 box">
+            <h2><center>Vairamundi Festival</center></h2>
+        <div class="box-img"><img src="https://pbs.twimg.com/media/ExyeuAoVEAU_pgB?format=jpg&name=large" alt="pic"></div>
+        <p><b style="color: rgb(128, 7, 7);">When is it celebrated:</b>March-April.<br>
+           <b style="color: rgb(128, 7, 7);"> Location:</b> Sri Cheluvanarayana Swamy Temple, Melkote Town, Karnataka.</p>
+        </div>
+
+        <div class="box2 box">
+
+            <h2><center>Kambala Festival</center></h2>
+            <div class="box-img"><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/6-kambala-buffalo-race-hira-punjabi.jpg" alt="pic"></div>
+            <p><b style="color: rgb(128, 7, 7);">When is it celebrated</b> November to March<br>
+                <b style="color: rgb(128, 7, 7);">Location:</b>Kasargod in Kerala, Udupi in Karnataka, and the coastal districts of Dakshina Kannada.</p> 
+        </div>
+        <div class="box3 box">
+            <h2><center>Karaga Festival</center></h2>
+            <div class="box-img"><img src="https://darter.in/wp-content/uploads/2013/11/karaga-bangalore-k2.jpg" alt="pic"></div>
+            <p><b style="color: rgb(128, 7, 7);">When is it celebrated:</b> March or April<br>
+                <b style="color: rgb(128, 7, 7);">Location</b> Varthur, Narasapura, Bangarpet, Ramagondanahalli and other parts of the state.</p> 
+
+        </div>
+     </div>
+
+   
+      <!-- Start Footer -->
+<footer id="footer" style="background-color: #7FC7D9;">
+    <center><img src="logo2-Photoroom.png-Photoroom.png" alt="Namma Nadu"></center>
+    <ul>
+        <li><a href="https://www.instagram.com/karnatakaworld/"><i class="fa fa-instagram" style="font-size:24px"></i></a></li>
+        <li><a href="https://www.facebook.com/KarnatakaWorld/"><i class="fa fa-facebook" style="font-size:24px"></i></a></li>
+        <li><a href="https://twitter.com/karnatakaworld?lang=en"><i class="fa fa-twitter" style="font-size:24px"></i></a></li>
+        <li><a href="www.youtube.com/@karnatakatourism7698"><i class="fa fa-youtube" style="font-size:24px"></i></a></li>
+        <li><a href="#"><i class="fa fa-phone" style="font-size:24px"></i></a></li>
+    </ul>
+  
+    <ul class="footer2">
+        <li><a href="#home">Home<a></li>
+        <li><a href="#">Term & Conditions<a></li>
+        <li><a href="#">Privacy Policy<a></li>
+        <li><a href="#">Contact us<a></li>
+        <li><a href="#">FAQs<a></li>
+    </ul>
+  
+  </footer>
+  <!-- End Footer -->
+</body>
+</html>
